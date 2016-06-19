@@ -1,5 +1,6 @@
 <?php
 
+/*
 // Every functions related to databases
 
 function dbConnect($bddname)
@@ -15,3 +16,4 @@ function dbConnect($bddname)
     }
     return ($dbh);
 }
+*/
