@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1ee266-2534-4157-85d4-ad126fc896d5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Ingredients.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/home.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/recipe.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/User.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/basicModel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/home/footer.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/home/header.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/home/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/home/template/home.tpl" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/controllers/user.php" afterPath="$PROJECT_DIR$/controllers/ingredientsController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/handler/UserHandler.php" afterPath="$PROJECT_DIR$/handler/IngredientsHandler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/ingredientsController.php" afterPath="$PROJECT_DIR$/controllers/ingredientsController.php" />
     </list>
     <ignored path="kitchenProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,7 +38,7 @@
       <file leaf-file-name="IngredientsHandler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handler/IngredientsHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="75">
               <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
               <folding>
                 <marker date="1466607051000" expanded="true" signature="235:303" placeholder="INSERT INTO ingredients... " />
@@ -68,11 +57,9 @@
       <file leaf-file-name="ingredientsController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/ingredientsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-              <folding>
-                <element signature="e#6#183#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -331,15 +318,15 @@
       <workItem from="1465986832791" duration="26533000" />
       <workItem from="1466528636833" duration="12215000" />
       <workItem from="1466594845094" duration="108000" />
-      <workItem from="1466595222031" duration="8938000" />
+      <workItem from="1466595222031" duration="11440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47794000" />
+    <option name="totallyTimeSpent" value="50296000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="23" width="1232" height="777" extended-state="6" />
+    <frame x="43" y="23" width="1232" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22268908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -474,7 +461,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/handler/IngredientsHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="75">
           <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
           <folding>
             <marker date="1466607051000" expanded="true" signature="235:303" placeholder="INSERT INTO ingredients... " />
@@ -491,11 +478,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/ingredientsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding>
-            <element signature="e#6#183#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
