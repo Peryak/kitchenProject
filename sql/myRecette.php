@@ -25,16 +25,25 @@ class myRecette{
     $this->id = $id;
   }
 
-  public function addIngredient($ingredient){
+  public function addIngredients($ingredient){
     array_push($this->ingredients, $ingredient);
   }
 
-  public function addStep($step){
+  public function addSteps($step){
     array_push($this->steps, $step);
   }
 
-  public function addComment($comment){
+  public function addComments($comment){
     array_push($this->comments, $comment);
+  }
+
+  public function fill($name, $id, $ingredients, $steps, $comments){
+    $this->addName($name);
+    $this->addId($id);
+    $this->addIngredients($ingredients);
+    $this->addSteps($steps);
+    $this->addComments($comments);
+    return ($this);
   }
 
 }
