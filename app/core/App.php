@@ -1,12 +1,5 @@
 <?php
 
-/*
- * Core directory stores app and controller
- * App is instantiated within the bootstrapped file
- * It gives the url splitting or routing and
- * handles the controllers
- */
-
 class App
 {
     // Default controller that we run
@@ -75,7 +68,7 @@ class App
     // Involve exploding and trimming the url, and give the path
     public function parseUrl()
     {
-        if(isset($_GET['url']))
+        if(isset($_GET['url'])) 
         {
             // To check if it works : echo $_GET['url'];
 
