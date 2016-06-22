@@ -10,7 +10,7 @@
 session_start();
 
 // Connexion to Database
-$bdd = new PDO('mysql:host=localhost;dbname=open_classroom','root','root');
+$bdd = new PDO('mysql:host=localhost;dbname=kitchenproject','root','');
 
 // Initialisation file
 require_once '../app/init.php';

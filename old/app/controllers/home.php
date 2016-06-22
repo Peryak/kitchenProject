@@ -6,7 +6,7 @@ class Home extends Controller
 {
     /* To check if the parameters work well
      * public function index($publicDirectory = '', $nextParam = '', $nextParam2)
-     */
+     *//*
     public function index($publicDirectory = '', $name)
     {
     // 2nd "if" condition of core/App.php : echo 'home/index';
@@ -21,8 +21,8 @@ class Home extends Controller
     // When we call a view. home/index refers to views/home/index.php
     $this->view('home/index', ['name' => $user->name]);
 
-    $template = "home";
-    }
+    //$template = "home";
+    }*/
 
 }
 
@@ -37,7 +37,7 @@ class tutoriels extends Controller{
 
         $this->loadModel('Tutoriel');
         $d['tutos'] = $this->Tutoriel->getLast();
-        
+
         // Create a new instance from the class
         echo $this->Tutoriel->find();
         $d['tuto'] = array(
@@ -46,7 +46,7 @@ class tutoriels extends Controller{
         );
 
         // Sent d view
-        $this->set($d); 
+        $this->set($d);
         // Give the index view
         $this->render('index');
     }

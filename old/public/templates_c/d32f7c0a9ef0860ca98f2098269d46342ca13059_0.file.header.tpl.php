@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-19 21:32:59
-  from "/Applications/MAMP/htdocs/kitchenProject/kitchenProject/app/views/home/header.tpl" */
+/* Smarty version 3.1.29, created on 2016-06-22 07:14:20
+  from "C:\wamp64\www\marmiton\kitchenProject\app\views\home\header.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5766f36b431d61_03184135',
+  'unifunc' => 'content_576a3acc069470_28605245',
   'file_dependency' => 
   array (
-    '73fd9237d86bae8f2dc14c690a8e78874479728d' => 
+    'd32f7c0a9ef0860ca98f2098269d46342ca13059' => 
     array (
-      0 => '/Applications/MAMP/htdocs/kitchenProject/kitchenProject/app/views/home/header.tpl',
-      1 => 1466364778,
+      0 => 'C:\\wamp64\\www\\marmiton\\kitchenProject\\app\\views\\home\\header.tpl',
+      1 => 1466413014,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5766f36b431d61_03184135 ($_smarty_tpl) {
+function content_576a3acc069470_28605245 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
