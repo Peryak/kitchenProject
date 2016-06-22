@@ -47,8 +47,12 @@ class myDB{
   public function putRecette($name, $eMail){
     $sql = "INSERT INTO recettes (email, titre) VALUES ('$eMail','$name');";
     $this->conn->query($sql);
-    //$sql = "SELECT id FROM recettes WHERE titre = '$name'";
-    $id = $conn->PDO::lastInsertId('');
+    $sql = "SELECT id FROM recettes WHERE titre = '$name'";
+    $req = $this->conn->query($sql);
+    while ($row = $req->fetch()){
+      $id = $row[0];
+    }
+    //echo $id;
     return ($id);
   }
 }
