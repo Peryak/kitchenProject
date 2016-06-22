@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ff1ee266-2534-4157-85d4-ad126fc896d5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Ingredients.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/home.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/recipe.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/User.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/basicModel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/home/footer.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/home/header.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/home/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/home/template/home.tpl" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/controllers/user.php" afterPath="$PROJECT_DIR$/controllers/ingredientsController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/handler/UserHandler.php" afterPath="$PROJECT_DIR$/handler/IngredientsHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
+    </list>
+    <ignored path="kitchenProject.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="kitchenProject" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IngredientsHandler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handler/IngredientsHandler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+              <folding>
+                <marker date="1466607051000" expanded="true" signature="235:303" placeholder="INSERT INTO ingredients... " />
+                <marker date="1466607051000" expanded="true" signature="569:630" placeholder="SELECT * fro... user" />
+                <marker date="1466607051000" expanded="true" signature="569:632" placeholder="SELECT `name... ingredients" />
+                <marker date="1466607051000" expanded="true" signature="569:635" placeholder="SELECT `name... ingredients" />
+                <marker date="1466607051000" expanded="true" signature="569:636" placeholder="SELECT `name... ingredients" />
+                <marker date="1466607051000" expanded="true" signature="993:1007" placeholder="SELECT * fro... user" />
+                <marker date="1466607051000" expanded="true" signature="993:1018" placeholder="SELECT * fro... ingredients" />
+                <marker date="1466607051000" expanded="true" signature="1428:1450" placeholder="DROP TABLE i... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ingredientsController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/ingredientsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+              <folding>
+                <element signature="e#6#183#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ingredients.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Ingredients.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/kitchenProject/Includes/configuration.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/Asset/style/style.css" />
+        <option value="$PROJECT_DIR$/kitchenProject/Asset/script/script.js" />
+        <option value="$PROJECT_DIR$/kitchenProject/Core/model.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/View/.htaccess" />
+        <option value="$PROJECT_DIR$/kitchenProject/View/index.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/Include/configuration.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/Model/basicModel.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/View/footer.tpl" />
+        <option value="$PROJECT_DIR$/kitchenProject/View/header.tpl" />
+        <option value="$PROJECT_DIR$/kitchenProject/View/Template/404.tpl" />
+        <option value="$PROJECT_DIR$/kitchenProject/Controller/controller.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/View/Template/home.tpl" />
+        <option value="$PROJECT_DIR$/kitchenProject/View/layout/default.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/Model/tutoriel.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/Core/controller.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/View/Template/index.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/Controller/tutoriels.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/controllers/home.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/core/App.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/core/Controller.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/Model/Tutoriel.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/app/.htaccess" />
+        <option value="$PROJECT_DIR$/kitchenProject/.htaccess" />
+        <option value="$PROJECT_DIR$/kitchenProject/index.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/public/style/style.css" />
+        <option value="$PROJECT_DIR$/kitchenProject/app/views/home/footer.tpl" />
+        <option value="$PROJECT_DIR$/kitchenProject/public/script/script.js" />
+        <option value="$PROJECT_DIR$/kitchenProject/app/views/home/header.tpl" />
+        <option value="$PROJECT_DIR$/kitchenProject/app/views/home/template/database.tpl" />
+        <option value="$PROJECT_DIR$/kitchenProject/public/index.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/app/init.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/app/core/Controller.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/app/core/App.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/app/views/home/index.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/app/controllers/home.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/app/views/home/template/home.tpl" />
+        <option value="$PROJECT_DIR$/kitchenProject/app/controllers/recipe.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/app/models/User.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/app/handler/UserHandler.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/controllers/user.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/models/User.php" />
+        <option value="$PROJECT_DIR$/kitchenProject/handler/UserHandler.php" />
+        <option value="$PROJECT_DIR$/controllers/homeController.php" />
+        <option value="$PROJECT_DIR$/models/User.php" />
+        <option value="$PROJECT_DIR$/controllers/userController.php" />
+        <option value="$PROJECT_DIR$/handler/UserHandler.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/models/Ingredients.php" />
+        <option value="$PROJECT_DIR$/handler/IngredientsHandler.php" />
+        <option value="$PROJECT_DIR$/controllers/ingredientsController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="43" />
+    <option name="y" value="23" />
+    <option name="width" value="1232" />
+    <option name="height" value="777" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handler" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TWEB-phpmyadmin" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/kitchenProject" />
+      <recent name="$PROJECT_DIR$/kitchenProject/app/handler" />
+      <recent name="$PROJECT_DIR$/kitchenProject/app" />
+      <recent name="$PROJECT_DIR$/kitchenProject/View" />
+      <recent name="$PROJECT_DIR$/kitchenProject/View/Views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/kitchenProject/public/script" />
+      <recent name="$PROJECT_DIR$/kitchenProject/app" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff1ee266-2534-4157-85d4-ad126fc896d5" name="Default" comment="" />
+      <created>1465986827715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1465986827715</updated>
+      <workItem from="1465986832791" duration="26533000" />
+      <workItem from="1466528636833" duration="12215000" />
+      <workItem from="1466594845094" duration="108000" />
+      <workItem from="1466595222031" duration="8938000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="47794000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="43" y="23" width="1232" height="777" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22268908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31970802" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31970802" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22268908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/kitchenProject/controllers/home.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/views/home/template/home.tpl" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/test.html" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/Asset/style/style.css" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/Asset/script/script.js" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/views/Template/404.tpl" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/views/header.tpl" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/views/footer.tpl" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/views/Template/home.tpl" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/views/Template/index.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/views/layout/default.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/Include/configuration.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/public/script/jquery-2.2.4.min.js" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/public/style/style.css" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/public/script/script.js" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/views/home/footer.tpl" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/views/home/header.tpl" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/models/basicModel.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/views/home/index.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/app/.htaccess" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/controllers/home.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/controllers/recipe.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/views/home/template/database.tpl" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/.htaccess" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/core/App.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/core/Controller.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/init.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/public/index.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/index.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/views/home/template/home.tpl" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/controllers/user.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/models/User.php" />
+    <entry file="file://$PROJECT_DIR$/kitchenProject/handler/UserHandler.php" />
+    <entry file="file://$PROJECT_DIR$/app/controllers/home.php" />
+    <entry file="file://$PROJECT_DIR$/app/models/User.php" />
+    <entry file="file://$PROJECT_DIR$/app/core/App.php" />
+    <entry file="file://$PROJECT_DIR$/controllers/recipe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/homeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Ingredients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handler/IngredientsHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding>
+            <marker date="1466607051000" expanded="true" signature="235:303" placeholder="INSERT INTO ingredients... " />
+            <marker date="1466607051000" expanded="true" signature="569:630" placeholder="SELECT * fro... user" />
+            <marker date="1466607051000" expanded="true" signature="569:632" placeholder="SELECT `name... ingredients" />
+            <marker date="1466607051000" expanded="true" signature="569:635" placeholder="SELECT `name... ingredients" />
+            <marker date="1466607051000" expanded="true" signature="569:636" placeholder="SELECT `name... ingredients" />
+            <marker date="1466607051000" expanded="true" signature="993:1007" placeholder="SELECT * fro... user" />
+            <marker date="1466607051000" expanded="true" signature="993:1018" placeholder="SELECT * fro... ingredients" />
+            <marker date="1466607051000" expanded="true" signature="1428:1450" placeholder="DROP TABLE i... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/ingredientsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="e#6#183#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
