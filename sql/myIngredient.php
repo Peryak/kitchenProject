@@ -13,8 +13,12 @@ class myIngredient{
   public $quantity;
   public $value;
 
-  public function __construct(){
-
+  public function __construct($name, $rId, $id, $quantity, $value){
+    $this->name = $name;
+    $this->rId = $rId;
+    $this->id = $id;
+    $this->quantity = $quantity;
+    $this->value = $value;
   }
 
   public function addName($name){
