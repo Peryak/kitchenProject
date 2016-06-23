@@ -2,32 +2,10 @@
 
 require_once '../handler/IngredientsHandler.php';
 
-$result = IngredientsHandler::readAll();
+$result1 = IngredientsHandler::readAll();
+$result2 = IngredientsHandler::read(1);
 
 ?>
-
-<table border="1">
-    <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Quantity</th>
-        <th>Value</th>
-    </tr>
-    <tr>
-        <?php
-        foreach ($result as $r){
-            echo '<td>'.$r->getName().'</td>';
-        }
-        ?>
-    </tr>
-    <tr>
-        <?php
-        foreach ($result as $r){
-            echo '<td>'.$r->getValue().'</td>';
-        }
-        ?>
-    </tr>
-</table>
 
 <!--
 $arrayIngredients = IngredientsHandler::readAll();
