@@ -5,7 +5,7 @@
   *   create by hugo couturier, 22/06/2016
   */
 
-class myIngredient{
+class myIngredients{
 
   public $name;
   public $rId;
