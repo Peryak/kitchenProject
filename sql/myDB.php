@@ -6,6 +6,7 @@
   */
 
 require "myRecette.php";
+require "../init.php";
 
 class myDB{
 
@@ -53,11 +54,13 @@ class myDB{
   }
 
   public function getComments($rId){
-    $sql = "SELECT `name`, `email`, `id` FROM recette WHERE recette_id ='$rId'";
+    $sql = "SELECT `pseudo`, `id`, `note`, 'commentaire' FROM commentaires WHERE recette_id ='$rId'";
     $req = $this->conn->query($sql);
-    foreach($req->fetch);
-    $recette = new myRecette();
-    return($recette);
+    foreach($req->fetch){
+      $com = new myContent(req[0], $rId, req[1], req[2], req[3]);
+      array_push($comments, $com);
+    }
+    return($comments);
   }
   /***
     *   ajout une recette a la base de donner et return l'id de cette recette.
