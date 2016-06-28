@@ -24,22 +24,40 @@ class myDB{
   }
 
   public function getRecette($name){
+    $sql = "SELECT `name`, `email`, `id` FROM recette WHERE name ='$name'";
+    $req = $this->conn->query($sql);
+    foreach($req->fetch);
     $recette = new myRecette();
-
-
     return($recette);
   }
 
-  public function getIgredient($rId){
-
+  public function getIgredients($rId){
+    $ingredients = array();
+    $sql = "SELECT `name`, 'id', 'quantitee_id', 'value' FROM ingredient WHERE recette_id ='$rId' ORDER BY id";
+    $req = $this->conn->query($sql);
+    foreach($req->fetch){
+      $ing = new myIngredients(req[0], $rId, req[1], req[2], req[3]);
+      array_push($ingredients, $ing);
+    }
+    return($ingredients);
   }
 
-  public function getStep($rId){
-
+  public function getSteps($rId){
+    $sql = "SELECT 'id', `etape_order`, `commentaire` FROM etapes WHERE recette_id ='$rId'";
+    $req = $this->conn->query($sql);
+    foreach($req->fetch){
+      $ste = new mySteps($rId, req[0], req[1], req[2]);
+      array_push($steps, $ste);
+    }
+    return($steps);
   }
 
-  public function getComment($rId){
-
+  public function getComments($rId){
+    $sql = "SELECT `name`, `email`, `id` FROM recette WHERE recette_id ='$rId'";
+    $req = $this->conn->query($sql);
+    foreach($req->fetch);
+    $recette = new myRecette();
+    return($recette);
   }
   /***
     *   ajout une recette a la base de donner et return l'id de cette recette.
@@ -55,4 +73,5 @@ class myDB{
     //echo $id;
     return ($id);
   }
+
 }
