@@ -111,7 +111,7 @@ if ( !empty($_POST)) {
             </div>
             <div class="form-actions">
                 <button type="submit" class="btn btn-success">Update</button>
-                <a class="btn" href="../index.php">Back</a>
+                <a class="btn" href="../../index.php">Back</a>
             </div>
         </form>
     </div>
