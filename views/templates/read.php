@@ -14,7 +14,7 @@ if ( null==$id ) {
 } else {
     $pdo = Database::connect();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "SELECT * FROM customers where id = ?";
+    $sql = "SELECT * FROM etapes where id = ?";
     $q = $pdo->prepare($sql);
     $q->execute(array($id));
     $data = $q->fetch(PDO::FETCH_ASSOC);
@@ -28,32 +28,32 @@ if ( null==$id ) {
 
         <div class="span10 offset1">
             <div class="row">
-                <h3>Read a Customer</h3>
+                <h3>Read the steps in detail</h3>
             </div>
 
             <div class="form-horizontal" >
                 <div class="control-group">
-                    <label class="control-label">Name</label>
+                    <label class="control-label">Order of the steps</label>
                     <div class="controls">
                         <label class="checkbox">
                             <!-- It prints out the $data variable -->
-                            <?php echo $data['name'];?>
+                            <?php echo $data['etape_order'];?>
                         </label>
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label">Email Address</label>
+                    <label class="control-label">Receipt number</label>
                     <div class="controls">
                         <label class="checkbox">
-                            <?php echo $data['email'];?>
+                            <?php echo $data['recette_id'];?>
                         </label>
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label">Mobile Number</label>
+                    <label class="control-label">Description</label>
                     <div class="controls">
                         <label class="checkbox">
-                            <?php echo $data['mobile'];?>
+                            <?php echo $data['description'];?>
                         </label>
                     </div>
                 </div>

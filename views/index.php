@@ -2,7 +2,7 @@
 
     <div class="container">
         <div class="row">
-            <h3>PHP CRUD Grid</h3>
+            <h3>Marmiton</h3>
         </div>
         <div class="row">
             <p>
@@ -12,9 +12,9 @@
             <table class="table table-striped table-bordered">
                 <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Email Address</th>
-                    <th>Mobile Number</th>
+                    <th>Order of the steps</th>
+                    <th>Receipt number</th>
+                    <th>Description</th>
                     <th>Action</th>
                 </tr>
                 </thead>
@@ -23,12 +23,12 @@
                 <?php
                 include '../handler/database.php';
                 $pdo = Database::connect();
-                $sql = 'SELECT * FROM customers ORDER BY id DESC';
+                $sql = 'SELECT * FROM etapes ORDER BY id DESC';
                 foreach ($pdo->query($sql) as $row) {
                     echo '<tr>';
-                    echo '<td>'. $row['name'] . '</td>';
-                    echo '<td>'. $row['email'] . '</td>';
-                    echo '<td>'. $row['mobile'] . '</td>';
+                    echo '<td>'. $row['etape_order'] . '</td>';
+                    echo '<td>'. $row['recette_id'] . '</td>';
+                    echo '<td>'. $row['description'] . '</td>';
                     echo '<td width=250>';
                     echo '<a class="btn" href="templates/read.php?id='.$row['id'].'">Read</a>';
                     echo ' ';
