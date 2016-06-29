@@ -5,35 +5,35 @@ require_once '../../handler/database.php';
 // Firstly we check if there is form submit by checking $_POST variable
 if ( !empty($_POST)) {
     // keep track validation errors
-    $nameError = null;
-    $emailError = null;
-    $mobileError = null;
+    $etape_orderError = null;
+    $recette_idError = null;
+    $descriptionError = null;
 
     // keep track post values
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $mobile = $_POST['mobile'];
+    $etape_order = $_POST['etape_order'];
+    $recette_id = $_POST['recette_id'];
+    $description = $_POST['description'];
 
     // If so, we check each entries to ensure they are not empty
     // However if there is any validation error, the validation variables will be showed in the form.
     // validate input
     $valid = true;
-    if (empty($name)) {
-        $nameError = 'Please enter Name';
+    if (empty($etape_order)) {
+        $etape_orderError = 'Please enter the order of the step';
         $valid = false;
     }
 
     // Additionally for email address entry, we use PHP filter to verify if it is a valid email address
-    if (empty($email)) {
-        $emailError = 'Please enter Email Address';
+    if (empty($recette_id)) {
+        $recette_idError = 'Please enter the receipt number';
         $valid = false;
-    } else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
+    } /*else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
         $emailError = 'Please enter a valid Email Address';
         $valid = false;
-    }
+    }*/
 
-    if (empty($mobile)) {
-        $mobileError = 'Please enter Mobile Number';
+    if (empty($description)) {
+        $descriptionError = 'Please enter a description of the receipt';
         $valid = false;
     }
 
@@ -43,9 +43,9 @@ if ( !empty($_POST)) {
     if ($valid) {
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "INSERT INTO customers (name,email,mobile) values(?, ?, ?)";
+        $sql = "INSERT INTO etapes (etape_order,recette_id,description) values(?, ?, ?)";
         $q = $pdo->prepare($sql);
-        $q->execute(array($name,$email,$mobile));
+        $q->execute(array($etape_order,$recette_id,$description));
         Database::disconnect();
         header("Location: ../index.php");
     }
@@ -57,34 +57,34 @@ if ( !empty($_POST)) {
 
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Create a Customer</h3>
+                        <h3>Create a step</h3>
                     </div>
 
                     <form class="form-horizontal" action="create.php" method="post">
-                        <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
-                            <label class="control-label">Name</label>
+                        <div class="control-group <?php echo !empty($etape_orderError)?'error':'';?>">
+                            <label class="control-label">Order of the steps</label>
                             <div class="controls">
-                                <input name="name" type="text"  placeholder="Name" value="<?php echo !empty($name)?$name:'';?>">
-                                <?php if (!empty($nameError)): ?>
-                                    <span class="help-inline"><?php echo $nameError;?></span>
+                                <input name="etape_order" type="text"  placeholder="Order of the step" value="<?php echo !empty($etape_order)?$etape_order:'';?>">
+                                <?php if (!empty($etape_orderError)): ?>
+                                    <span class="help-inline"><?php echo $etape_orderError;?></span>
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="control-group <?php echo !empty($emailError)?'error':'';?>">
-                            <label class="control-label">Email Address</label>
+                        <div class="control-group <?php echo !empty($recette_idError)?'error':'';?>">
+                            <label class="control-label">Receipt number</label>
                             <div class="controls">
-                                <input name="email" type="text" placeholder="Email Address" value="<?php echo !empty($email)?$email:'';?>">
-                                <?php if (!empty($emailError)): ?>
-                                    <span class="help-inline"><?php echo $emailError;?></span>
+                                <input name="recette_id" type="text" placeholder="Receipt number" value="<?php echo !empty($recette_id)?$recette_id:'';?>">
+                                <?php if (!empty($recette_idError)): ?>
+                                    <span class="help-inline"><?php echo $recette_idError;?></span>
                                 <?php endif;?>
                             </div>
                         </div>
-                        <div class="control-group <?php echo !empty($mobileError)?'error':'';?>">
-                            <label class="control-label">Mobile Number</label>
+                        <div class="control-group <?php echo !empty($descriptionError)?'error':'';?>">
+                            <label class="control-label">Description</label>
                             <div class="controls">
-                                <input name="mobile" type="text"  placeholder="Mobile Number" value="<?php echo !empty($mobile)?$mobile:'';?>">
-                                <?php if (!empty($mobileError)): ?>
-                                    <span class="help-inline"><?php echo $mobileError;?></span>
+                                <input name="description" type="text"  placeholder="Description" value="<?php echo !empty($description)?$description:'';?>">
+                                <?php if (!empty($descriptionError)): ?>
+                                    <span class="help-inline"><?php echo $descriptionError;?></span>
                                 <?php endif;?>
                             </div>
                         </div>
