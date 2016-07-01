@@ -1,18 +1,17 @@
 <?php
 
-class etapes {
+class stepsController {
     private $pdo;
     private $model;
     public function __construct ()
     {
-        echo "cc";
         $this->pdo = Database::connect();
-        $this->model = new testModel($this->pdo);
+        $this->model = new Steps($this->pdo);
 
     }
     public function getst() {
-        $result = $this->model->getlist();
+        $result = $this->model->getlistAction();
         //include "views/receipts/test.php";
-        require_once('views/receipts/test.php');
+        require_once('views/steps/display.php');
     }
 }

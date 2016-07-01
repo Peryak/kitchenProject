@@ -4,7 +4,7 @@
         </div>
         <div class="row">
             <p>
-                <a href="create.php" class="btn btn-success">Create</a>
+                <a href="/kitchenProject/views/steps/create.php" class="btn btn-success">Create</a>
             </p>
 
             <table class="table table-striped table-bordered">
@@ -31,11 +31,11 @@
                     echo '<td>'. $row['recette_id'] . '</td>';
                     echo '<td>'. $row['description'] . '</td>';
                     echo '<td width=250>';
-                    echo '<a class="btn" href="templates/read.php?id='.$row['id'].'">Read</a>';
+                    echo '<a class="btn" href="/kitchenProject/views/steps/read.php?id='.$row['id'].'">Read</a>';
                     echo ' ';
-                    echo '<a class="btn btn-success" href="templates/update.php?id='.$row['id'].'">Update</a>';
+                    echo '<a class="btn btn-success" href="/kitchenProject/views/steps/update.php?id='.$row['id'].'">Update</a>';
                     echo ' ';
-                    echo '<a class="btn btn-danger" href="templates/delete.php?id='.$row['id'].'">Delete</a>';
+                    echo '<a class="btn btn-danger" href="/kitchenProject/views/steps/delete.php?id='.$row['id'].'">Delete</a>';
                     echo '</td>';
                     echo '</tr>';
                 }
@@ -45,4 +45,3 @@
             </table>
         </div>
     </div> <!-- /container -->
-    <a href="index.php?control=recette&func=showRecette">test Theo</a>

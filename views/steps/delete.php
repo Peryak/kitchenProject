@@ -1,6 +1,6 @@
 <?php
 
-require '../../handler/database.php';
+require '../../handler/connection.php';
 
 $id = 0;
 
@@ -24,12 +24,10 @@ if ( !empty($_POST)) {
     $q = $pdo->prepare($sql);
     $q->execute(array($id));
     Database::disconnect();
-    header("Location: ../index.php");
+    header("Location: ../layout.php");
 
 }
 ?>
-
-<?php include '../header.php' ?>
 
 <div class="container">
 
@@ -50,5 +48,3 @@ if ( !empty($_POST)) {
     </div>
 
 </div> <!-- /container -->
-
-<?php include '../footer.php' ?>

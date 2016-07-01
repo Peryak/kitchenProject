@@ -1,5 +1,7 @@
 <?php
-require '../../handler/database.php';
+
+require_once '../../handler/connection.php';
+
 $id = null;
 
 // First it tries to allocate a $_GET['id'] variable
@@ -10,7 +12,7 @@ if ( !empty($_GET['id'])) {
 /*  If it is not found, it redirects to "index.php" page
     Otherwise, it will read data from database using the "id" field and store data into a PHP variable $data */
 if ( null==$id ) {
-    header("Location: ../index.php");
+    header("Location: ../layout.php");
 } else {
     $pdo = Database::connect();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -21,8 +23,6 @@ if ( null==$id ) {
     Database::disconnect();
 }
 ?>
-
-<?php include '../header.php'?>
 
     <div class="container">
 
@@ -61,10 +61,7 @@ if ( null==$id ) {
                     <a class="btn" href="../../index.php">Back</a>
                 </div>
 
-
             </div>
         </div>
 
     </div> <!-- /container -->
-
-<?php include '../footer.php'?>

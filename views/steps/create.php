@@ -1,7 +1,5 @@
 <?php
 
-require_once '../../handler/database.php';
-
 // Firstly we check if there is form submit by checking $_POST variable
 if ( !empty($_POST)) {
     // keep track validation errors
@@ -47,12 +45,10 @@ if ( !empty($_POST)) {
         $q = $pdo->prepare($sql);
         $q->execute(array($etape_order,$recette_id,$description));
         Database::disconnect();
-        header("Location: ../index.php");
+        header("Location: ../layout.php");
     }
 }
 ?>
-
-<?php include '../header.php' ?>
     <div class="container">
 
                 <div class="span10 offset1">
@@ -96,5 +92,3 @@ if ( !empty($_POST)) {
                 </div>
 
     </div> <!-- /container -->
-
-<?php include '../footer.php' ?>

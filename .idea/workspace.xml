@@ -2,22 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1ee266-2534-4157-85d4-ad126fc896d5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/etapesController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/ingredientsController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/handler/IngredientsHandler.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/handler/database.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/Ingredients.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/footer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/header.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/templates/create.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/templates/delete.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/templates/read.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/templates/test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/templates/update.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/init.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/Etapes.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/controllers/etapes_controller.php" afterPath="$PROJECT_DIR$/controllers/stepsController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/controllers/pages_controller.php" afterPath="$PROJECT_DIR$/controllers/pagesController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/controllers/post_controller.php" afterPath="$PROJECT_DIR$/controllers/postController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/post.php" afterPath="$PROJECT_DIR$/models/Posts.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/testModel.php" afterPath="$PROJECT_DIR$/models/Steps.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/receipts/create.php" afterPath="$PROJECT_DIR$/views/steps/create.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/receipts/delete.php" afterPath="$PROJECT_DIR$/views/steps/delete.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/receipts/read.php" afterPath="$PROJECT_DIR$/views/steps/read.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/receipts/test.php" afterPath="$PROJECT_DIR$/views/steps/display.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/receipts/update.php" afterPath="$PROJECT_DIR$/views/steps/update.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Etapes.php" afterPath="$PROJECT_DIR$/models/Etapes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/testModel.php" afterPath="$PROJECT_DIR$/models/testModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes.php" afterPath="$PROJECT_DIR$/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.php" afterPath="$PROJECT_DIR$/views/layout.php" />
     </list>
     <ignored path="kitchenProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,23 +48,102 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Etapes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Etapes.php">
+      <file leaf-file-name="layout.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="195">
+              <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="display.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/steps/display.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/steps/create.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
               <folding>
-                <marker date="1467355397000" expanded="true" signature="328:399" placeholder="INSERT INTO etapes... " />
+                <marker date="1467366611000" expanded="true" signature="1482:1553" placeholder="INSERT INTO etapes... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+            <state relative-caret-position="1020">
+              <caret line="68" column="63" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/steps/delete.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="30" />
+              <folding>
+                <marker date="1467367172000" expanded="true" signature="629:661" placeholder="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/steps/update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="51" column="29" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="29" />
+              <folding>
+                <marker date="1467367272000" expanded="true" signature="1422:1500" placeholder="UPDATE etape... " />
+                <marker date="1467367272000" expanded="true" signature="1981:2014" placeholder="SELECT * FRO... etapes" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/steps/read.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="32" />
+              <folding>
+                <marker date="1467367145000" expanded="true" signature="524:557" placeholder="SELECT * FRO... etapes" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Steps.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Steps.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <folding>
+                <marker date="1467366215000" expanded="true" signature="170:207" placeholder="SELECT * FRO... etapes" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stepsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/stepsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -88,19 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kitchenProject/Model/Tutoriel.php" />
-        <option value="$PROJECT_DIR$/kitchenProject/app/.htaccess" />
-        <option value="$PROJECT_DIR$/kitchenProject/.htaccess" />
-        <option value="$PROJECT_DIR$/kitchenProject/index.php" />
-        <option value="$PROJECT_DIR$/kitchenProject/public/style/style.css" />
-        <option value="$PROJECT_DIR$/kitchenProject/app/views/home/footer.tpl" />
-        <option value="$PROJECT_DIR$/kitchenProject/public/script/script.js" />
-        <option value="$PROJECT_DIR$/kitchenProject/app/views/home/header.tpl" />
-        <option value="$PROJECT_DIR$/kitchenProject/app/views/home/template/database.tpl" />
-        <option value="$PROJECT_DIR$/kitchenProject/public/index.php" />
-        <option value="$PROJECT_DIR$/kitchenProject/app/init.php" />
-        <option value="$PROJECT_DIR$/kitchenProject/app/core/Controller.php" />
-        <option value="$PROJECT_DIR$/kitchenProject/app/core/App.php" />
         <option value="$PROJECT_DIR$/kitchenProject/app/views/home/index.php" />
         <option value="$PROJECT_DIR$/kitchenProject/app/controllers/home.php" />
         <option value="$PROJECT_DIR$/kitchenProject/app/views/home/template/home.tpl" />
@@ -133,11 +198,24 @@
         <option value="$PROJECT_DIR$/views/templates/create.php" />
         <option value="$PROJECT_DIR$/views/index.php" />
         <option value="$PROJECT_DIR$/models/testModel.php" />
-        <option value="$PROJECT_DIR$/controllers/etapesController.php" />
         <option value="$PROJECT_DIR$/controllers/recettesController.php" />
         <option value="$PROJECT_DIR$/views/templates/test.php" />
         <option value="$PROJECT_DIR$/controllers/recetteController.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/controllers/etapesController.php" />
+        <option value="$PROJECT_DIR$/controllers/steps.php" />
+        <option value="$PROJECT_DIR$/views/receipts/test.php" />
+        <option value="$PROJECT_DIR$/routes.php" />
+        <option value="$PROJECT_DIR$/models/Posts.php" />
+        <option value="$PROJECT_DIR$/models/Steps.php" />
+        <option value="$PROJECT_DIR$/views/receipts/display.php" />
+        <option value="$PROJECT_DIR$/views/layout.php" />
+        <option value="$PROJECT_DIR$/controllers/stepsController.php" />
+        <option value="$PROJECT_DIR$/views/steps/create.php" />
+        <option value="$PROJECT_DIR$/views/steps/read.php" />
+        <option value="$PROJECT_DIR$/views/steps/delete.php" />
+        <option value="$PROJECT_DIR$/views/steps/update.php" />
+        <option value="$PROJECT_DIR$/views/steps/display.php" />
         <option value="$PROJECT_DIR$/models/Etapes.php" />
       </list>
     </option>
@@ -199,6 +277,66 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="steps" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitchenProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,16 +412,16 @@
       <workItem from="1466528636833" duration="12215000" />
       <workItem from="1466594845094" duration="108000" />
       <workItem from="1466595222031" duration="16235000" />
-      <workItem from="1466794906210" duration="26189000" />
+      <workItem from="1466794906210" duration="29868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81280000" />
+    <option name="totallyTimeSpent" value="84959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="24" y="23" width="1256" height="777" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17298187" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -291,7 +429,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33722627" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33722627" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -339,15 +477,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kitchenProject/views/Template/home.tpl" />
-    <entry file="file://$PROJECT_DIR$/kitchenProject/views/Template/index.php" />
-    <entry file="file://$PROJECT_DIR$/kitchenProject/views/layout/default.php" />
-    <entry file="file://$PROJECT_DIR$/kitchenProject/Include/configuration.php" />
-    <entry file="file://$PROJECT_DIR$/kitchenProject/public/script/jquery-2.2.4.min.js" />
-    <entry file="file://$PROJECT_DIR$/kitchenProject/public/style/style.css" />
-    <entry file="file://$PROJECT_DIR$/kitchenProject/public/script/script.js" />
-    <entry file="file://$PROJECT_DIR$/kitchenProject/views/home/footer.tpl" />
-    <entry file="file://$PROJECT_DIR$/kitchenProject/views/home/header.tpl" />
     <entry file="file://$PROJECT_DIR$/kitchenProject/models/basicModel.php" />
     <entry file="file://$PROJECT_DIR$/kitchenProject/views/home/index.php" />
     <entry file="file://$PROJECT_DIR$/kitchenProject/app/.htaccess" />
@@ -474,24 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/etapesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/testModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding>
-            <marker date="1467355066000" expanded="true" signature="168:205" placeholder="SELECT * FRO... etapes" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Ingredients.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -516,20 +627,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/Posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="7" column="75" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="75" />
+          <folding>
+            <marker date="1467366039000" expanded="true" signature="635:654" placeholder="SELECT * FRO... posts" />
+            <marker date="1467366039000" expanded="true" signature="1070:1104" placeholder="SELECT * FRO... posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/pagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/stepsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/Etapes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="270">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/steps/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="30" />
           <folding>
-            <marker date="1467355397000" expanded="true" signature="328:399" placeholder="INSERT INTO etapes... " />
+            <marker date="1467367172000" expanded="true" signature="629:661" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/steps/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="29" />
+          <folding>
+            <marker date="1467367272000" expanded="true" signature="1422:1500" placeholder="UPDATE etape... " />
+            <marker date="1467367272000" expanded="true" signature="1981:2014" placeholder="SELECT * FRO... etapes" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/steps/read.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <marker date="1467367145000" expanded="true" signature="524:557" placeholder="SELECT * FRO... etapes" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Steps.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <marker date="1467366215000" expanded="true" signature="170:207" placeholder="SELECT * FRO... etapes" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/steps/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+          <folding>
+            <marker date="1467366611000" expanded="true" signature="1482:1553" placeholder="INSERT INTO etapes... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        <state relative-caret-position="1020">
+          <caret line="68" column="63" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/steps/display.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
           <folding />
         </state>
       </provider>
