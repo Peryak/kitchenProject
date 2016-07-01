@@ -1,7 +1,7 @@
 <?php
 
 class Etapes {
-    
+
     public function Etapes() {
         //If it passes all validation rules, it inserts data to database using Database class
         // insert data
