@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Pierre
- * Date: 29/06/2016
- * Time: 11:56
- */
 class testModel
 {
     private $pdo;
