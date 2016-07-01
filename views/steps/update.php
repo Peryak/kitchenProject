@@ -1,5 +1,6 @@
 <?php
-require '../../handler/database.php';
+
+require '../../handler/connection.php';
 
 $id = null;
 if ( !empty($_GET['id'])) {
@@ -54,7 +55,7 @@ if ( !empty($_POST)) {
         Database::disconnect();
 
         // At last it will redirect to "index.php" using PHP header() function
-        header("Location: ../index.php");
+        header("Location: ../layout.php");
     }
 } else {
 
@@ -71,8 +72,6 @@ if ( !empty($_POST)) {
     Database::disconnect();
 }
 ?>
-
-<?php include '../header.php' ?>
 
 <div class="container">
 
@@ -117,5 +116,3 @@ if ( !empty($_POST)) {
     </div>
 
 </div> <!-- /container -->
-
-<?php include '../footer.php' ?>

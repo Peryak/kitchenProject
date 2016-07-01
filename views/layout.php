@@ -7,11 +7,11 @@
   </head>
   <body>
     <header>
-        <a href='/Other/MVClast'>Home</a>
+        <a href='/kitchenProject/'>Home</a>
         <!-- Let’s modify our layout to add a link to the posts in the header
             Final step: we have to create the views we require in the posts controller -->
         <a href='?controller=posts&action=index'>Posts</a>
-        <a href='?controller=etapes&action=getst'>Etapes</a>
+        <a href='?controller=steps&action=getst'>Steps</a>
     </header>
 
     <body>
@@ -25,7 +25,6 @@
     <?php require_once('routes.php'); ?>
 
     <footer>
-        Copyright
     </footer>
     <body>
 <html>

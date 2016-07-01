@@ -16,7 +16,7 @@ class Post {
         $this->content = $content;
     }
 
-    public static function all() {
+    public static function allAction() {
         $list = [];
         $db = Db::getInstance();
         $req = $db->query('SELECT * FROM posts');
@@ -29,7 +29,7 @@ class Post {
         return $list;
     }
 
-    public static function find($id) {
+    public static function findAction($id) {
         $db = Db::getInstance();
         // we make sure $id is an integer
         $id = intval($id);

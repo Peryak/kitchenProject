@@ -9,19 +9,19 @@
 // Say we want to be able to fetch a list of posts and display those, and same thing for one particular post
 
 function call($controller, $action) {
-    require_once('controllers/' . $controller . '_controller.php');
+    require_once('controllers/' . $controller . 'Controller.php');
 
     switch($controller) {
         case 'pages':
             $controller = new PagesController();
             break;
-        case 'etapes':
-            require_once('models/testModel.php');
-            $controller = new etapes();
+        case 'steps':
+            require_once('models/Steps.php');
+            $controller = new StepsController();
             break;
         case 'posts':
             // we need the model to query the database later in the controller
-            require_once('models/post.php');
+            require_once('models/Posts.php');
             $controller = new PostsController();
             break;
     }
@@ -32,7 +32,7 @@ function call($controller, $action) {
 // we're adding an entry for the new controller and its actions
 $controllers = array('pages' => ['home', 'error'],
                     'posts' => ['index', 'show'],
-                    'etapes' => ['getst']);
+                    'steps' => ['getst']);
 
 if (array_key_exists($controller, $controllers)) {
     if (in_array($action, $controllers[$controller])) {
