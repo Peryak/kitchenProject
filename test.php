@@ -8,4 +8,21 @@ $pdo = Database::connect();
 $var = new Read();
 $var->tab = $var->receiptAction($pdo, 'recette de test');
 
-var_dump($var->tab);
+?>
+
+<table>
+    <thead>
+        <tr>
+            <th>Test</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <?php foreach ($var->tab as $item) { ?>
+            <td><?php echo($item) ?></td>
+            <?php } ?>
+        </tr>
+    </tbody>
+
+}
+    </table>

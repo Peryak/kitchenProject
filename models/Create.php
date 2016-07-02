@@ -70,12 +70,12 @@ class Create{
     }
   }
 
-  public function ingredientAction($array, $rId){
+  public function ingredientAction($array, $rId) {
     //check l'in de la quantité
 
     // ajouter l'ingredient avec l'id quantité
   }
-
+/*
   $_POST = array(
     'etape_order' => array(
       'etape 1'=> array(
@@ -86,5 +86,5 @@ class Create{
     'ingredients' => array(
       'ingreient 1' =>
     ),
-  )
+  )*/
 }
