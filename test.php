@@ -8,6 +8,7 @@ $pdo = Database::connect();
 $var = new Read();
 $var->tab = $var->receiptAction($pdo, 'recette de test');
 
+<<<<<<< HEAD
 ?>
 
 <table>
@@ -26,3 +27,6 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
 
 }
     </table>
+=======
+var_dump($var->tab);
+>>>>>>> 8d1093c83cc66d9619c25471367ad29e7e7b665b
