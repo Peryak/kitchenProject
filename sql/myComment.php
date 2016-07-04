@@ -5,16 +5,16 @@
   *   create by hugo couturier, 22/06/2016
   */
 
-class myContent{
+class myComment{
 
-  $pseudo;
-  $rId;
-  $id;
-  $note;
-  $comment;
+  public $name;
+  public $rId;
+  public $id;
+  public $note;
+  public $comment;
 
   public function __construct($pseudo, $rId, $id, $note, $comment){
-      $this->pseudo = $pseudo;
+      $this->name = $pseudo;
       $this->id = $id;
       $this->name = $rId;
       $this->quantity = $note;
@@ -22,7 +22,7 @@ class myContent{
   }
 
   public function addPseudo($pseudo){
-    $this->pseudo = $pseudo;
+    $this->name = $pseudo;
   }
 
   public function addId($id){
