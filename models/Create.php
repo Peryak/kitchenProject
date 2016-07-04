@@ -17,6 +17,12 @@ class Create{
 
   }
 
+  private function putRecette($handle){
+
+    $pass = TRUE;
+    return (array($pass, $rId));
+  }
+
   public function stepsAction(){
     // Firstly we check if there is form submit by checking $_POST variable
     if ( !empty($_POST)) {
