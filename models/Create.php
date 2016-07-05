@@ -2,11 +2,12 @@
 
 class Create{
 
-  public function receiptAction($_POST){
+  public function receiptAction($_POST, $handle){
+
     //ajouter l'ellement reccette
-
+    $res = $this->putRecette($handle, ?eMail, ?name);
     //chercher l'id de la nouvelle recette
-
+    $rId = $res['rId'];
     //pour chaque ingredient ajouter l'ingredient avec l'id de la recette
 
     //pour chaque etape ajouter l'etape avec l'id de la recette
@@ -17,10 +18,22 @@ class Create{
 
   }
 
-  private function putRecette($handle){
-
+  private function putRecette($handle, $eMail, $name){
+    $sql = "INSERT INTO recettes (email, titre) VALUES ('$eMail','$name');";
+    $handle->query($sql);
+    $sql = "SELECT id FROM recettes WHERE titre = '$name'";
+    $req = $handle->query($sql);
+    while ($row = $req->fetch()){
+      $id = $row[0];
+    }
+    //echo $id;
+    return ($id);
     $pass = TRUE;
-    return (array($pass, $rId));
+    return (array('pass' => $pass, 'rId' => $rId));
+  }
+
+  private function putIngredients($handle, $ingredients){
+
   }
 
   public function stepsAction(){
@@ -81,16 +94,3 @@ class Create{
 
     // ajouter l'ingredient avec l'id quantité
   }
-
-  $_POST = array(
-    'etape_order' => array(
-      'etape 1'=> array(
-
-      ),
-      'etc'
-    ),
-    'ingredients' => array(
-      'ingreient 1' =>
-    ),
-  )
-}
