@@ -9,16 +9,25 @@ class myRecette{
 
   public $name;
   public $id;
+  public $mail;
   public $ingredients = array();
   public $steps = array();
   public $comments = array();
 
-  public function __construct(){
+  public function __construct($id, $mail, $title){
+    $this->addName($title);
+    $this->addId($id);
+    $this->addMail($mail);
+
 
   }
 
   public function addName($name){
     $this->name = $name;
+  }
+
+  public function addMail($mail){
+    $this->mail = $mail;
   }
 
   public function addId($id){
