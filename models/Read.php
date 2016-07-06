@@ -21,7 +21,7 @@ class Read{
     $recp->ingredients = $req->getIgredients($handle, $recp->id);
     //var_dump($recp->ingredients);
     $this->getQuantity($handle, $recp);
-    var_dump($recp->ingredients);
+    //var_dump($recp->ingredients);
     // recuperer les etapes de cette recette
     $recp->steps = $req->getSteps($handle, $recp->id);
     //var_dump($recp->steps);
