@@ -13,7 +13,7 @@ class myComment{
   public $note;
   public $comment;
 
-  public function __construct($pseudo, $rId, $id, $note, $comment){
+  public function __construct($pseudo, $rId, $id, $note, $comment) {
       $this->name = $pseudo;
       $this->id = $id;
       $this->name = $rId;
@@ -21,32 +21,52 @@ class myComment{
       $this->value = $comment;
   }
 
-  public function addPseudo($pseudo){
+  public function addPseudo($pseudo) {
     $this->name = $pseudo;
   }
 
-  public function addId($id){
+  public function addId($id) {
     $this->id = $id;
   }
 
-  public function addRId($rId){
+  public function addRId($rId) {
     $this->rId = $rId;
   }
 
-  public function addNote($note){
+  public function addNote($note) {
     $this->note = $note;
   }
 
-  public function addComment($comment){
+  public function addComment($comment) {
     $this->comment = $comment;
   }
 
-  public function fill($pseudo, $id, $rId, $note, $comment){
+  public function fill($pseudo, $id, $rId, $note, $comment) {
     $this->addPseudo($pseudo);
     $this->addId($id);
     $this->addRId($rId);
     $this->addNote($note);
     $this->addComment($comment);
     return ($this);
+  }
+
+  public function getPseudo() {
+    return ($this->name);
+  }
+
+  public function getId() {
+    return ($this->id);
+  }
+
+  public function getRId($rId) {
+    return ($this->rId);
+  }
+
+  public function getNote($note) {
+    return ($this->note);
+  }
+
+  public function getComment($comment) {
+    return ($this->comment);
   }
 }
