@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1ee266-2534-4157-85d4-ad126fc896d5" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/handler/IngredientsHandler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/Steps.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handler/connection.php" afterPath="$PROJECT_DIR$/handler/connection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Create.php" afterPath="$PROJECT_DIR$/models/Create.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
     </list>
     <ignored path="kitchenProject.iws" />
@@ -34,21 +38,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Create.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Create.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/Create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="100" column="5" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+            <state relative-caret-position="225">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
-                <marker date="1467655415000" expanded="true" signature="20:2852" placeholder="..." />
-                <marker date="1467655415000" expanded="true" signature="62:316" placeholder="..." />
-                <marker date="1467655415000" expanded="true" signature="351:2282" placeholder="..." />
-                <marker date="1467655415000" expanded="true" signature="454:2278" placeholder="..." />
-                <marker date="1467655415000" expanded="true" signature="1026:1133" placeholder="..." />
-                <marker date="1467655415000" expanded="true" signature="1277:1380" placeholder="..." />
-                <marker date="1467655415000" expanded="true" signature="1579:1693" placeholder="..." />
-                <marker date="1467655415000" expanded="true" signature="1835:2246" placeholder="..." />
-                <marker date="1467655415000" expanded="true" signature="1971:2042" placeholder="INSERT INTO etapes... " />
+                <marker date="1467791840000" expanded="true" signature="501:562" placeholder="INSERT INTO recettes... " />
+                <marker date="1467791840000" expanded="true" signature="612:657" placeholder="SELECT id FR... recettes" />
+                <marker date="1467791840000" expanded="true" signature="2763:2834" placeholder="INSERT INTO etapes... " />
               </folding>
             </state>
           </provider>
@@ -57,36 +55,31 @@
       <file leaf-file-name="Sql.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Sql.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="513">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
-                <marker date="1467479276000" expanded="true" signature="195:217" placeholder="SELECT * fro... recettes" />
-                <marker date="1467479276000" expanded="true" signature="551:583" placeholder="SELECT * fro... recettes" />
-                <marker date="1467479276000" expanded="true" signature="838:935" placeholder="SELECT `name... ingredient" />
-                <marker date="1467479276000" expanded="true" signature="1052:1130" placeholder="SELECT 'id',... etapes" />
+                <marker date="1467787439000" expanded="true" signature="195:217" placeholder="SELECT * fro... recettes" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Steps.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Steps.php">
+      <file leaf-file-name="connection.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handler/connection.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-              <folding>
-                <marker date="1467366215000" expanded="true" signature="170:207" placeholder="SELECT * FRO... etapes" />
-              </folding>
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kitchenProject/app/views/home/template/home.tpl" />
         <option value="$PROJECT_DIR$/kitchenProject/app/controllers/recipe.php" />
         <option value="$PROJECT_DIR$/kitchenProject/app/models/User.php" />
         <option value="$PROJECT_DIR$/kitchenProject/app/handler/UserHandler.php" />
@@ -167,8 +159,9 @@
         <option value="$PROJECT_DIR$/views/steps/display.php" />
         <option value="$PROJECT_DIR$/models/Etapes.php" />
         <option value="$PROJECT_DIR$/controllers/postController.php" />
-        <option value="$PROJECT_DIR$/models/Create.php" />
         <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/handler/connection.php" />
+        <option value="$PROJECT_DIR$/models/Create.php" />
       </list>
     </option>
   </component>
@@ -278,20 +271,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitchenProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitchenProject" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -365,12 +344,12 @@
       <workItem from="1466594845094" duration="108000" />
       <workItem from="1466595222031" duration="16235000" />
       <workItem from="1466794906210" duration="35320000" />
-      <workItem from="1467479147912" duration="2104000" />
+      <workItem from="1467479147912" duration="3161000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92515000" />
+    <option name="totallyTimeSpent" value="93572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="23" width="1236" height="777" extended-state="0" />
@@ -430,7 +409,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kitchenProject/controllers/home.php" />
     <entry file="file://$PROJECT_DIR$/kitchenProject/controllers/recipe.php" />
     <entry file="file://$PROJECT_DIR$/kitchenProject/views/home/template/database.tpl" />
     <entry file="file://$PROJECT_DIR$/kitchenProject/.htaccess" />
@@ -449,13 +427,6 @@
     <entry file="file://$PROJECT_DIR$/controllers/recipe.php" />
     <entry file="file://$PROJECT_DIR$/views/home/index.php" />
     <entry file="file://$PROJECT_DIR$/controllers/homeController.php" />
-    <entry file="file://$PROJECT_DIR$/handler/IngredientsHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/handler/databaseHandler.php" />
     <entry file="file://$PROJECT_DIR$/views/templates/read.php" />
     <entry file="file://$PROJECT_DIR$/views/templates/delete.php" />
@@ -562,25 +533,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Steps.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <marker date="1467366215000" expanded="true" signature="170:207" placeholder="SELECT * FRO... etapes" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Sql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="513">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <marker date="1467479276000" expanded="true" signature="195:217" placeholder="SELECT * fro... recettes" />
-            <marker date="1467479276000" expanded="true" signature="551:583" placeholder="SELECT * fro... recettes" />
-            <marker date="1467479276000" expanded="true" signature="838:935" placeholder="SELECT `name... ingredient" />
-            <marker date="1467479276000" expanded="true" signature="1052:1130" placeholder="SELECT 'id',... etapes" />
+            <marker date="1467787439000" expanded="true" signature="195:217" placeholder="SELECT * fro... recettes" />
           </folding>
         </state>
       </provider>
@@ -593,24 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="100" column="5" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
-          <folding>
-            <marker date="1467655415000" expanded="true" signature="20:2852" placeholder="..." />
-            <marker date="1467655415000" expanded="true" signature="62:316" placeholder="..." />
-            <marker date="1467655415000" expanded="true" signature="351:2282" placeholder="..." />
-            <marker date="1467655415000" expanded="true" signature="454:2278" placeholder="..." />
-            <marker date="1467655415000" expanded="true" signature="1026:1133" placeholder="..." />
-            <marker date="1467655415000" expanded="true" signature="1277:1380" placeholder="..." />
-            <marker date="1467655415000" expanded="true" signature="1579:1693" placeholder="..." />
-            <marker date="1467655415000" expanded="true" signature="1835:2246" placeholder="..." />
-            <marker date="1467655415000" expanded="true" signature="1971:2042" placeholder="INSERT INTO etapes... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/stepsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -619,11 +559,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/handler/connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handler/IngredientsHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Steps.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1467791840000" expanded="true" signature="501:562" placeholder="INSERT INTO recettes... " />
+            <marker date="1467791840000" expanded="true" signature="612:657" placeholder="SELECT id FR... recettes" />
+            <marker date="1467791840000" expanded="true" signature="2763:2834" placeholder="INSERT INTO etapes... " />
+          </folding>
         </state>
       </provider>
     </entry>

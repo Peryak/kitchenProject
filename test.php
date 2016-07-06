@@ -24,12 +24,8 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
         ?>
       </tr>
     </tbody>
-<<<<<<< HEAD
 
-}
 </table>
-=======
-  </table>
+
 </html>
-//var_dump($var->tab);
->>>>>>> f60a93c96807017d0e7c9d8cb4aaa2d16f6ea285
+
