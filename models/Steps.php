@@ -8,7 +8,7 @@ class Steps
     {
         $this->pdo = $pdo;
     }
-    public function getlistAction(){
+    public function getlistAction() {
         $sql = 'SELECT * FROM etapes ORDER BY id DESC';
         $res = $this->pdo->query($sql);
         Database::disconnect();

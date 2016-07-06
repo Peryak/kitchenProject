@@ -14,39 +14,37 @@ class myRecette{
   public $steps = array();
   public $comments = array();
 
-  public function __construct($id, $mail, $title){
+  public function __construct($id, $mail, $title) {
     $this->addName($title);
     $this->addId($id);
     $this->addMail($mail);
-
-
   }
 
-  public function addName($name){
+  public function addName($name) {
     $this->name = $name;
   }
 
-  public function addMail($mail){
+  public function addMail($mail) {
     $this->mail = $mail;
   }
 
-  public function addId($id){
+  public function addId($id) {
     $this->id = $id;
   }
 
-  public function addIngredients($ingredient){
+  public function addIngredients($ingredient) {
     array_push($this->ingredients, $ingredient);
   }
 
-  public function addSteps($step){
+  public function addSteps($step) {
     array_push($this->steps, $step);
   }
 
-  public function addComments($comment){
+  public function addComments($comment) {
     array_push($this->comments, $comment);
   }
 
-  public function fill($name, $id, $ingredients, $steps, $comments){
+  public function fill($name, $id, $ingredients, $steps, $comments) {
     $this->addName($name);
     $this->addId($id);
     $this->addIngredients($ingredients);
@@ -55,4 +53,27 @@ class myRecette{
     return ($this);
   }
 
+  public function getName() {
+    return ($this->name);
+  }
+
+  public function getMail() {
+    return ($this->mail);
+  }
+
+  public function getId() {
+    return ($this->id);
+  }
+
+  public function getIngredients() {
+    return ($this->ingredients);
+  }
+
+  public function getSteps() {
+    return ($this->steps);
+  }
+
+  public function getComments() {
+    return ($this->comments);
+  }
 }
