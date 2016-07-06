@@ -57,13 +57,7 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
         ?>
       </tr>
     </tbody>
-<<<<<<< HEAD
 
-</table>
+</table> -->
 
 </html>
-
-=======
-  </table>-->
-</html>
->>>>>>> 5f2ff1ff6ff3ad8d891be997e2ae21757d81fe6c
