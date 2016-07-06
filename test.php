@@ -61,5 +61,7 @@ foreach ($var->tab as $item){
         ?>
       </tr>
     </tbody>
-  </table>-->
+
+</table> -->
+
 </html>
