@@ -9,20 +9,27 @@ $var = new Read();
 $var->tab = $var->receiptAction($pdo, 'recette de test');
 
 ?>
-
-<table>
+<html>
+  <table>
     <thead>
-        <tr>
-            <th>Test</th>
-        </tr>
+      <tr>
+        <th>Test</th>
+      </tr>
     </thead>
     <tbody>
-        <tr>
-            <?php foreach ($var->tab as $item) { ?>
-            <td><?php echo($item) ?></td>
-            <?php } ?>
-        </tr>
+      <tr>
+        <?php foreach ($var->tab as $item) {
+          echo("<td>" . var_dump($item) . "</td>");
+        }
+        ?>
+      </tr>
     </tbody>
+<<<<<<< HEAD
 
 }
 </table>
+=======
+  </table>
+</html>
+//var_dump($var->tab);
+>>>>>>> f60a93c96807017d0e7c9d8cb4aaa2d16f6ea285
