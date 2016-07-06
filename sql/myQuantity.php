@@ -9,22 +9,30 @@ class myQUantity{
   public $id;
   public $value;
 
-  public function __construct($id, $value){
+  public function __construct($id, $value) {
     $this->id = $id;
     $this->value = $value;
   }
 
-  public function addId($id){
+  public function addId($id) {
     $this->id = $id;
   }
 
-  public function addValue($value){
+  public function addValue($value) {
     $this->value = $value;
   }
 
-  public function fill($id, $value){
+  public function fill($id, $value) {
     $this->addId($id);
     $this->addValue($value);
     return ($this);
+  }
+
+  public function getId() {
+    return ($this->id);
+  }
+
+  public function getValue($value) {
+    return ($this->value);
   }
 }
