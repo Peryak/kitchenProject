@@ -6,8 +6,8 @@
   */
 
 class myQUantity{
-  public $id;
-  public $value;
+  private $id;
+  private $value;
 
   public function __construct($id, $value) {
     $this->id = $id;

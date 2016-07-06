@@ -7,14 +7,14 @@
 
 class myRecette{
 
-  public $name;
-  public $id;
-  public $mail;
+  private $name;
+  private $id;
+  private $mail;
   private $cookTime;
   private $prepTime;
-  public $ingredients = array();
-  public $steps = array();
-  public $comments = array();
+  private $ingredients = array();
+  private $steps = array();
+  private $comments = array();
 
   public function __construct($id, $mail, $title, $cookTime, $prepTime) {
     $this->addName($title);

@@ -6,10 +6,10 @@
   */
 
 class mySteps{
-  public $id;
-  public $rId;
-  public $order;
-  public $description;
+  private $id;
+  private $rId;
+  private $order;
+  private $description;
 
   public function __construct($rId, $id, $order, $description) {
     $this->id = $id;

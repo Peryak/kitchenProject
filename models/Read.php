@@ -18,7 +18,7 @@ class Read{
     // si plusieur recette
 
     // recuperer les ingredients de cette recette
-    $recp->ingredients = $req->getIgredients($handle, $recp->id);
+    $recp->addIngredients($req->getIgredients($handle, $recp->getId()));
     //var_dump($recp->ingredients);
     $this->getQuantity($handle, $recp);
     //var_dump($recp->ingredients);
@@ -88,8 +88,9 @@ class Read{
     foreach ($stmt->fetchALL(PDO::FETCH_ASSOC) as $key) {
       $tradTable[$key['id']] = $key['name'];
     }
-    foreach ($recp->ingredients as $r) {
-      $r->addQuantity($tradTable[$r->getQuantity()]);
+    foreach ($recp->getIngredients() as $r) {
+      //$r->addQuantity($tradTable[$r->getQuantity()]);
+      var_dump($r);
     }
   }
 
