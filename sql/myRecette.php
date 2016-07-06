@@ -10,14 +10,18 @@ class myRecette{
   public $name;
   public $id;
   public $mail;
+  private $cookTime;
+  private $prepTime;
   public $ingredients = array();
   public $steps = array();
   public $comments = array();
 
-  public function __construct($id, $mail, $title) {
+  public function __construct($id, $mail, $title, $cookTime, $prepTime) {
     $this->addName($title);
     $this->addId($id);
     $this->addMail($mail);
+    $this->addCT($cookTime);
+    $this->addPT($prepTime);
   }
 
   public function addName($name) {
@@ -30,6 +34,14 @@ class myRecette{
 
   public function addId($id) {
     $this->id = $id;
+  }
+
+  public function addCT($cookTime) {
+    $this->cookTime = $cookTime;
+  }
+
+  public function addPT($prepTime) {
+    $this->prepTime = $prepTime;
   }
 
   public function addIngredients($ingredient) {
@@ -63,6 +75,14 @@ class myRecette{
 
   public function getId() {
     return ($this->id);
+  }
+
+  public function getCT() {
+    return ($this->cookTime);
+  }
+
+  public function getPT() {
+    return ($this->prepTime);
   }
 
   public function getIngredients() {

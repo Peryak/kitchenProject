@@ -29,7 +29,7 @@ class Database
             try
             {
                 //  It has an $instance variable that retains the connection object (PDO here)
-                self::$cont =  new PDO( "mysql:host=".self::$dbHost.";"."dbname=".self::$dbName, self::$dbUsername, self::$dbUserPassword);
+                self::$cont =  new PDO( "mysql:host=" . self::$dbHost . ";" . "dbname=" . self::$dbName . ";charset=utf8", self::$dbUsername, self::$dbUserPassword);
             }
             catch(PDOException $e)
             {

@@ -8,6 +8,10 @@ $pdo = Database::connect();
 $var = new Read();
 $var->tab = $var->receiptAction($pdo, 'recette de test');
 
+foreach ($var->tab as $item){
+  echo var_dump($item);
+}
+
 ?>
 <html>
   <div class="header">

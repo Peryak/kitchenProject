@@ -7,11 +7,11 @@
 
 class myIngredients{
 
-  public $name;
-  public $rId;
-  public $id;
-  public $quantity;
-  public $value_ing;
+  private $name;
+  private $rId;
+  private $id;
+  private $quantity;
+  private $value_ing;
 
   public function __construct($name, $rId, $id, $quantity, $value_ing) {
     $this->name = $name;
