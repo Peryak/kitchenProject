@@ -7,10 +7,11 @@ $pdo = Database::connect();
 
 $var = new Read();
 $var->tab = $var->receiptAction($pdo, 'recette de test');
-
+/*
 foreach ($var->tab as $item){
-  echo var_dump($item);
+  var_dump($item);
 }
+*/
 
 ?>
 <html>
@@ -28,11 +29,15 @@ foreach ($var->tab as $item){
       foreach ($var->tab as $item) {
         if (!is_bool($item)){
           echo ("<h3> User : " . $item->getMail() . "</h3>");
-          foreach ($item->getIngredients() as $subItem) {
-            echo ("" . $subItem->getName() . $subItem->getValue() . $subItem->getQuantity() . "</br>");
+          //$subItem = $item->getIngredients()[0];
+          foreach ($item->getIngredients()[0] as $r){
+            echo ($r->getName() . $r->getValue() . $r->getQuantity() . "</br>");
           }
-          foreach ($item->getSteps() as $subItem) {
-            echo ("" . $subItem->getDescription() . "</br>");
+
+          //$subItem = $item->getSteps()[0];
+          //var_dump($subItem);
+          foreach ($item->getSteps()[0] as $r) {
+            echo ($r->getDescription() . "</br>");
           }
         }
       }

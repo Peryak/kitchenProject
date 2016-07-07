@@ -23,7 +23,7 @@ class Read{
     $this->getQuantity($handle, $recp);
     //var_dump($recp->ingredients);
     // recuperer les etapes de cette recette
-    $recp->steps = $req->getSteps($handle, $recp->id);
+    $recp->addSteps($req->getSteps($handle, $recp->getId()));
     //var_dump($recp->steps);
     //recuperer les commentaires
 /*
@@ -88,9 +88,9 @@ class Read{
     foreach ($stmt->fetchALL(PDO::FETCH_ASSOC) as $key) {
       $tradTable[$key['id']] = $key['name'];
     }
-    foreach ($recp->getIngredients() as $r) {
-      //$r->addQuantity($tradTable[$r->getQuantity()]);
-      var_dump($r);
+    foreach ($recp->getIngredients()[0] as $r) {
+      $r->addQuantity($tradTable[$r->getQuantity()]);
+      //var_dump($r);
     }
   }
 
