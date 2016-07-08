@@ -33,8 +33,8 @@
              role="navigation" style="margin-bottom: 0">
             <div class="nav collapse navbar-header navbar-collapse">
                 <a class="navbar-brand titleheader-clara_global" href="/kitchenProject/">kitchenProject</a>
-                <a class="navbar-brand" href='?controller=posts&action=index'>Posts</a>
-                <a class="navbar-brand" href='?controller=steps&action=getst'>Steps</a>
+                <a class="navbar-brand navbarTitle" href='?controller=posts&action=index'>Posts</a>
+                <a class="navbar-brand navbarTitle" href='?controller=steps&action=getst'>Steps</a>
             </div>
             <!-- /.navbar-header -->
             <ul class="nav navbar-top-links navbar-right">

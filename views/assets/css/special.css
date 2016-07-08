@@ -45,7 +45,7 @@
 
 /* Entire navbar */
 .header-clara_global {
-	background-color: #666556;
+	background-color: #32393f;
 }
 
 .logo-clara_global {
@@ -64,12 +64,20 @@
 }
 
 .titleheader-clara_global:hover {
-	color: #f47321;
+	color: #e57d3a;
 }
 
 .titleheader-clara_global:active,
 .titleheader-clara_global:focus {
 	color: #fafafa;
+}
+
+.navbarTitle {
+	color: #fafafa;
+}
+
+.navbarTitle:hover {
+	color: #e57d3a;
 }
 
 /* Search bar */
@@ -90,9 +98,9 @@ background-color: #fafafa;
 
 .btnsearch-clara_global:hover,
 .btnsearch-clara_global:focus {
-	background-color: #f47321;
+	background-color: #e57d3a;
 	color: #fafafa;
-	border: 1px solid #f47321;
+	border: 1px solid #e57d3a;
 }
 
 #placeholder-clara_global::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -118,14 +126,14 @@ background-color: #fafafa;
 .navbar .dropdown > a:focus, 
 .navbar .dropdown > a:active,
 .navbar .dropdown > a:visited  {
-    background-color: #f47321;
+    background-color: #e57d3a;
 }
 
 .navbar .dropdown .dropdown-menu > li > a:hover, 
 .navbar .dropdown .dropdown-menu > li > a:focus, 
 .navbar .dropdown .dropdown-menu > li > a:active,
 .navbar .dropdown .dropdown-menu > li > a:visited  {
-    background-color: #f47321;
+    background-color: #e57d3a;
 }
 
 .navbar .dropdown .dropdown-menu > li > a {
@@ -149,30 +157,30 @@ background-color: #fafafa;
 
 .navbar .sidebar .sidebar-nav .nav > li > a {
 	color: #32393f;
-	border-bottom: 1px solid #fbf9e3;
-	border-top: 1px solid #fbf9e3;
+	border-bottom: 1px solid #fffef3;
+	border-top: 1px solid #fffef3;
 	font-family: 'akzidenzRegular', sans-serif;
 }
 
 .navbar .sidebar .sidebar-nav .nav > li > a:hover {
-	background-color: #f47321;
+	background-color: #e57d3a;
 	color: #fafafa; 
 }
 
 .navbar .sidebar .sidebar-nav .nav > li > a:focus {
-	background-color: #fbf9e3;
+	background-color: #fffef3;
 	color: #32393f;
 }
 
 .navbar .sidebar ul li a.current-page.active, 
 li.active .current-page  {
-	background-color: #f47321;
+	background-color: #e57d3a;
 	color: #fafafa;
 }
 
 /* div behind sidebar */
 body, #wrapper {
-	background-color: #fbf9e3;
+	background-color: #fffef3;
 }
 
 /* Swipeable side menu */
@@ -196,7 +204,7 @@ body, #wrapper {
 }
 
 .swipeablebtn-clara_global:hover {
-	background-color: #f47321;
+	background-color: #e57d3a;
 	color: #fafafa; 
 }
 
@@ -206,7 +214,7 @@ body, #wrapper {
 }
 
 .navbar .sidebar .sidebar-nav .nav > li > a {
-	background-color: #fbf9e3;
+	background-color: #fffef3;
 }
 
 /* ------- Global body ------- */
@@ -218,7 +226,7 @@ body, #wrapper {
 }
 
 .titlebody-clara_global {
-	background-color: #fbf9e3;
+	background-color: #fffef3;
 	margin-top: 0px;
 	margin-left: -30px;
 	margin-right: -30px;
