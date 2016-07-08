@@ -334,16 +334,32 @@ body, #wrapper {
 /* Project panel */
 
 .panel .panelheading-clara_global {
-	background-color: #e9ebed;
+	background-color: #569bcc;
 }
 
 .panel .panelheading-clara_global > i {
 	color: #32393f;
 }
 
+.panelfooter-clara_global {
+	background-color: #ffffff;
+}
+
 .titlepanel-clara_global {
 	font-family: 'akzidenzRegular', sans-serif;
-	font-size: 15px;
+	font-size: 20px;
+}
+
+.titlepanelbody-clara_global {
+	font-family: 'akzidenzRegular', sans-serif;
+	font-size: 19px;
+	border-bottom: 1px solid #bcc3c7;
+	width: 120px;
+	padding-bottom: 5px;
+}
+
+.userpanelbody-clara_global {
+	margin-top: -2px;
 }
 
 .btn-clara_global {
