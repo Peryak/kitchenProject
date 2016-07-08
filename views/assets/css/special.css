@@ -1,0 +1,540 @@
+/* ------- General ------- */
+
+/* Default version */
+@font-face {
+	font-family: 'akzidenzRegular';
+	src: url('../font/AKZIDENZGROTESKBQ-REGULAR.OTF');
+	src: local('AKZIDENZGROTESKBQ'),
+		url('../font/AKZIDENZGROTESKBQ-REGULAR.OTF'),
+		format('opentype');
+}
+
+/* Medium version */
+@font-face {
+	font-family: 'akzidenzMedium';
+	src: url('../font/AKZIDENZGROTESKBQ-MEDIUM.OTF');
+	src: local('AKZIDENZGROTESKBQ'),
+		url('../font/AKZIDENZGROTESKBQ-MEDIUM.OTF'),
+		format('opentype');
+}
+
+/* Bold version */
+@font-face {
+	font-family: 'akzidenzBold';
+	src: url('../font/AKZIDENZGROTESKBQ-BOLD.OTF');
+	src: local('AKZIDENZGROTESKBQ'),
+		url('../font/AKZIDENZGROTESKBQ-BOLD.OTF'),
+		format('opentype');
+}
+
+/* Super Bold version */
+@font-face {
+	font-family: 'akzidenzSuperBold';
+	src: url('../font/AKZIDENZGROTESKBQ-SUPER.OTF');
+	src: local('AKZIDENZGROTESKBQ'),
+		url('../font/AKZIDENZGROTESKBQ-SUPER.OTF'),
+		format('opentype');
+}
+
+/* All icons */
+.icon-clara_global {
+	color: #fafafa;
+}
+
+/* ------- Header ------- */
+
+/* Entire navbar */
+.header-clara_global {
+	background-color: #666556;
+}
+
+.logo-clara_global {
+	/*display: inline-block;
+	vertical-align: middle;*/
+	height: 100%;
+	width: auto;
+}
+
+/* Title */
+.titleheader-clara_global {
+	color: #fafafa;
+	font-family: 'akzidenzBold', sans-serif;
+	font-size: 25px;
+	padding-left: 60px;
+}
+
+.titleheader-clara_global:hover {
+	color: #f47321;
+}
+
+.titleheader-clara_global:active,
+.titleheader-clara_global:focus {
+	color: #fafafa;
+}
+
+/* Search bar */
+
+input[type="text"], textarea {
+outline: none;
+box-shadow:none !important;
+border:1px solid #fafafa!important;
+background-color: #fafafa;
+}
+
+.btnsearch-clara_global {
+	height: 34px;
+	background-color: #fafafa;
+	color: #32393f;
+	border: 1px solid #fafafa;
+}
+
+.btnsearch-clara_global:hover,
+.btnsearch-clara_global:focus {
+	background-color: #f47321;
+	color: #fafafa;
+	border: 1px solid #f47321;
+}
+
+#placeholder-clara_global::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #32393f;
+    opacity: 0.6;
+}
+#placeholder-clara_global:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #32393f;
+   opacity: 0.6;
+}
+#placeholder-clara_global::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #32393f;
+   opacity: 0.6;
+}
+#placeholder-clara_global:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #32393f;
+   opacity: 0.6;
+}
+
+/* Dropdown menu */
+
+.navbar .dropdown > a:hover, 
+.navbar .dropdown > a:focus, 
+.navbar .dropdown > a:active,
+.navbar .dropdown > a:visited  {
+    background-color: #f47321;
+}
+
+.navbar .dropdown .dropdown-menu > li > a:hover, 
+.navbar .dropdown .dropdown-menu > li > a:focus, 
+.navbar .dropdown .dropdown-menu > li > a:active,
+.navbar .dropdown .dropdown-menu > li > a:visited  {
+    background-color: #f47321;
+}
+
+.navbar .dropdown .dropdown-menu > li > a {
+	color: #32393f;
+}
+
+.navbar .dropdown .dropdown-menu > li > a:hover {
+	color: #fafafa;	
+}
+
+/* ------- Sidebar ------- */
+
+/* Default parameters */
+.navbar .sidebar .sidebar-nav {
+	padding-top: 10px;
+}
+
+.navbar .sidebar .sidebar-nav .nav > li > .sidebartitle-clara_global {
+	font-family: 'akzidenzMedium', sans-serif;
+}
+
+.navbar .sidebar .sidebar-nav .nav > li > a {
+	color: #32393f;
+	border-bottom: 1px solid #fbf9e3;
+	border-top: 1px solid #fbf9e3;
+	font-family: 'akzidenzRegular', sans-serif;
+}
+
+.navbar .sidebar .sidebar-nav .nav > li > a:hover {
+	background-color: #f47321;
+	color: #fafafa; 
+}
+
+.navbar .sidebar .sidebar-nav .nav > li > a:focus {
+	background-color: #fbf9e3;
+	color: #32393f;
+}
+
+.navbar .sidebar ul li a.current-page.active, 
+li.active .current-page  {
+	background-color: #f47321;
+	color: #fafafa;
+}
+
+/* div behind sidebar */
+body, #wrapper {
+	background-color: #fbf9e3;
+}
+
+/* Swipeable side menu */
+#main-container {
+	position: fixed;
+	bottom: 0px;
+}
+
+.menu-icon {
+	cursor: pointer;
+	height: 40px;
+}
+
+.swipeablebtn-clara_global {
+	color: #32393f;
+	width: 250px;
+	padding-left: 17px;
+	padding-right: 19px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.swipeablebtn-clara_global:hover {
+	background-color: #f47321;
+	color: #fafafa; 
+}
+
+.titleswipeablebtn-clara_global {
+	padding-left: 4px;
+	font-family: 'akzidenzeRegular', sans-serif;
+}
+
+.navbar .sidebar .sidebar-nav .nav > li > a {
+	background-color: #fbf9e3;
+}
+
+/* ------- Global body ------- */
+
+#page-wrapper {
+	background-color: #fafafa;
+	font-family: "Helvetica", Helvetica, sans-serif;
+	border-left: 2px solid #bcc3c7;
+}
+
+.titlebody-clara_global {
+	background-color: #fbf9e3;
+	margin-top: 0px;
+	margin-left: -30px;
+	margin-right: -30px;
+	padding: 12px;
+	padding-left: 20px;
+	font-family: 'akzidenzRegular', sans-serif;
+	font-size: 24px;
+}
+
+/* ------- Small boxes ------- */
+
+/* Project panel */
+.paneldarkgrey-clara_global {
+	border-color: rgba(50, 57, 63, 1);
+}
+
+.paneldarkgrey-clara_global .panel-heading {
+	border-color: rgba(50, 57, 63, 1);
+	background-color: rgba(50, 57, 63, 1);
+	color: #fafafa;
+}
+
+.paneldarkgrey-clara_global > a {
+	color: #3d4b55;
+}
+
+.paneldarkgrey-clara_global > a:hover {
+	color: #ae0015;
+}
+
+/* Backlogs panel */
+.panelgrey-clara_global {
+	border-color: rgba(50, 57, 63, 0.75);
+}
+
+.panelgrey-clara_global .panel-heading {
+	border-color: rgba(50, 57, 63, 0.75);
+	background-color: rgba(50, 57, 63, 0.75);
+	color: #fafafa;
+}
+
+.panelgrey-clara_global > a {
+	color: #3d4b55;
+}
+
+.panelgrey-clara_global > a:hover {
+	color: #ae0015;
+}
+
+/* Immersion panel */
+.panellightgrey-clara_global {
+	border-color: rgba(50, 57, 63, 0.3);
+}
+
+.panellightgrey-clara_global .panel-heading {
+	border-color: rgba(50, 57, 63, 0.3);
+	background-color: rgba(50, 57, 63, 0.3);
+	color: #fafafa;
+}
+
+.panellightgrey-clara_global > a {
+	color: #3d4b55;
+}
+
+.panellightgrey-clara_global > a:hover {
+	color: #ae0015;
+}
+
+/* Sprint panel */
+.panelmiddlegrey-clara_global {
+	border-color: rgba(50, 57, 63, 0.5);
+}
+
+.panelmiddlegrey-clara_global .panel-heading {
+	border-color: rgba(50, 57, 63, 0.5);
+	background-color: rgba(50, 57, 63, 0.5);
+	color: #fafafa;
+}
+
+.panelmiddlegrey-clara_global > a {
+	color: #3d4b55;
+}
+
+.panelmiddlegrey-clara_global > a:hover {
+	color: #ae0015;
+}
+
+/* Every panel */
+
+@media (min-width: 1200px) {
+	.panelsize-clara_global {
+		width: 17%;
+		font-size: 15px;
+    	margin-left: 6.5%;
+	}
+	.huge {
+	font-size: 30px;
+	}
+	.panelfooterfontsize-clara_global {
+		font-size: 14px;
+	}
+}
+
+
+/* ------- Panels ------- */
+
+/* Project panel */
+
+.panel .panelheading-clara_global {
+	background-color: #e9ebed;
+}
+
+.panel .panelheading-clara_global > i {
+	color: #32393f;
+}
+
+.titlepanel-clara_global {
+	font-family: 'akzidenzRegular', sans-serif;
+	font-size: 15px;
+}
+
+.btn-clara_global {
+	border-color: #32393f;
+	background-color: #e9ebed;
+	color: #32393f;
+}
+
+.btn-clara_global:hover,
+.btn-clara_global:focus {
+	background-color: #32393f;
+	color: #fafafa;
+}
+
+.dropdownmenu-clara_global > li > a:hover, 
+.dropdownmenu-clara_global > li > a:focus, 
+.dropdownmenu-clara_global > li > a:active,
+.dropdownmenu-clara_global > li > a:visited  {
+    background-color: #32393f;
+}
+
+.dropdownmenu-clara_global > li > a:hover {
+	color: #fafafa;	
+}
+
+.dropdownmenu-clara_global {
+	background-color: #fafafa;
+}
+
+li > .list-clara_global:hover {
+	background-color: blue;
+}
+
+.panelbody-clara_global {
+	background-color: #fafafa;
+}
+
+/* Backlogs panel */
+
+.titlecolumnpanel-clara_global {
+	font-family: 'akzidenzRegular', sans-serif;
+	text-align: center;
+}
+
+.backlogcolumn-clara_global > hr {
+	    border-top: 1px solid #bcc3c7;
+}
+
+/* ------- Buttons ------- */
+
+/* Btn close and droppdown */
+.btnclose-clara_global, 
+.btnclose-clara_global:visited,
+.btndropdown-clara_global,
+.btndropdown-clara_global:visited {
+	outline: none !important;
+	border-color: rgb(204, 204, 204);
+	background-color: #fafafa;
+	color: #32393f;
+}
+
+.btnclose-clara_global:hover,
+.btnclose-clara_global:focus,
+.btnclose-clara_global:active,
+.btndropdown-clara_global:hover,
+.btndropdown-clara_global:focus,
+.btndropdown-clara_global:active {
+	outline: none !important;
+	border-color: rgb(204, 204, 204);
+	background-color: #e9ebed;
+	color: #32393f;
+}
+
+/* Btn send and information */
+.btnsend-clara_global, 
+.btnsend-clara_global:visited,
+.btninfo-clara_global, 
+.btninfo-clara_global:visited {
+	outline: none !important;
+	border-color: #32393f;
+	background-color: #3d4b55;
+	color: #fafafa;
+}
+
+.btnsend-clara_global:hover,
+.btnsend-clara_global:focus,
+.btnsend-clara_global:active,
+.btninfo-clara_global:hover,
+.btninfo-clara_global:focus,
+.btninfo-clara_global:active {
+	outline: none !important;
+	background-color: #32393f;
+	color: #fafafa;
+}
+
+/* Btn delete and confirm */
+.btndelete-clara_global, 
+.btndelete-clara_global:visited,
+.btnconfirm-clara_global,
+.btnconfirm-clara_global:visited {
+	outline: none !important;
+	border-color: #ae0015;
+	background-color: #e11c24;
+	color: #fafafa;
+}
+
+.btndelete-clara_global:hover,
+.btndelete-clara_global:focus,
+.btndelete-clara_global:active,
+.btnconfirm-clara_global:hover,
+.btnconfirm-clara_global:focus,
+.btnconfirm-clara_global:active {
+	outline: none !important;
+	background-color: #ae0015;
+	color: #fafafa;
+}
+
+/* Btn link */
+.btnlink-clara_global, 
+.btnlink-clara_global:visited {
+	color: #32393f;
+	text-decoration: underline;
+}
+
+.btnlink-clara_global:hover,
+.btnlink-clara_global:focus,
+.btnlink-clara_global:active {
+	color: #ae0015;
+	text-decoration: none !important;
+}
+
+/* ------- Modals ------- */
+
+.modal-content {
+	background-color: #fafafa;
+}
+
+.modal-header {
+	border-bottom: 1px solid #e9ebed;
+}
+
+.modal-footer {
+	border-top: 1px solid #e9ebed;
+}
+
+/* ------- Login ------- */
+
+/* Login page */
+.bodyloginpage-clara_global {
+	background-color: #fafafa;
+}
+
+.paneltitle {
+	text-align: center;
+}
+
+.logologin-clara_global img {
+	margin-top: 40%;
+	width: 20%;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.titleloginpage-clara_global {
+	margin-top: 40%;
+	font-family: 'akzidenzBold', sans-serif;
+	font-size: 40px;
+	color: #e11c24;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* Login panel */
+.panellogin-clara_global {
+	margin-top: 20px;
+	border-color: #3d4b55;
+	border-radius: 5px 5px 2px 2px;
+}
+
+.panelheadinglogin-clara_global {
+	background-color: #3d4b55;
+}
+
+.titlepanellogin-clara_global {
+	font-family: 'akzidenzRegular', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	color: #fafafa;
+}
+
+.panelbodylogin-clara_global {
+	background-color: #fafafa;
+}
+
+.textarea-clara_global {
+	outline: none;
+	box-shadow:none !important;
+	border:1px solid #bcc3c7 !important;
+	background-color: #white;
+}
