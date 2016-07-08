@@ -45,26 +45,24 @@
 
 /* Entire navbar */
 .header-clara_global {
-	background-color: #32393f;
+	background-color: #176aa5;
 }
 
 .logo-clara_global {
-	/*display: inline-block;
-	vertical-align: middle;*/
 	height: 100%;
 	width: auto;
 }
 
 /* Title */
 .titleheader-clara_global {
-	color: #fafafa;
+	color: #8bb5d2;
 	font-family: 'akzidenzBold', sans-serif;
 	font-size: 25px;
 	padding-left: 60px;
 }
 
 .titleheader-clara_global:hover {
-	color: #e57d3a;
+	color: #fafafa;
 }
 
 .titleheader-clara_global:active,
@@ -73,11 +71,11 @@
 }
 
 .navbarTitle {
-	color: #fafafa;
+	color: #8bb5d2;
 }
 
 .navbarTitle:hover {
-	color: #e57d3a;
+	color: #fafafa;
 }
 
 /* Search bar */
@@ -98,9 +96,9 @@ background-color: #fafafa;
 
 .btnsearch-clara_global:hover,
 .btnsearch-clara_global:focus {
-	background-color: #e57d3a;
+	background-color: #8bb5d2;
 	color: #fafafa;
-	border: 1px solid #e57d3a;
+	border: 1px solid #8bb5d2;
 }
 
 #placeholder-clara_global::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -126,14 +124,14 @@ background-color: #fafafa;
 .navbar .dropdown > a:focus, 
 .navbar .dropdown > a:active,
 .navbar .dropdown > a:visited  {
-    background-color: #e57d3a;
+    background-color: #8bb5d2;
 }
 
 .navbar .dropdown .dropdown-menu > li > a:hover, 
 .navbar .dropdown .dropdown-menu > li > a:focus, 
 .navbar .dropdown .dropdown-menu > li > a:active,
 .navbar .dropdown .dropdown-menu > li > a:visited  {
-    background-color: #e57d3a;
+    background-color: #8bb5d2;
 }
 
 .navbar .dropdown .dropdown-menu > li > a {
@@ -157,30 +155,30 @@ background-color: #fafafa;
 
 .navbar .sidebar .sidebar-nav .nav > li > a {
 	color: #32393f;
-	border-bottom: 1px solid #fffef3;
-	border-top: 1px solid #fffef3;
+	border-bottom: 1px solid #fafafa;
+	border-top: 1px solid #fafafa;
 	font-family: 'akzidenzRegular', sans-serif;
 }
 
 .navbar .sidebar .sidebar-nav .nav > li > a:hover {
-	background-color: #e57d3a;
+	background-color: #8bb5d2;
 	color: #fafafa; 
 }
 
 .navbar .sidebar .sidebar-nav .nav > li > a:focus {
-	background-color: #fffef3;
+	background-color: #fafafa;
 	color: #32393f;
 }
 
 .navbar .sidebar ul li a.current-page.active, 
 li.active .current-page  {
-	background-color: #e57d3a;
+	background-color: #8bb5d2;
 	color: #fafafa;
 }
 
 /* div behind sidebar */
 body, #wrapper {
-	background-color: #fffef3;
+	background-color: #fafafa;
 }
 
 /* Swipeable side menu */
@@ -204,7 +202,7 @@ body, #wrapper {
 }
 
 .swipeablebtn-clara_global:hover {
-	background-color: #e57d3a;
+	background-color: #8bb5d2;
 	color: #fafafa; 
 }
 
@@ -214,7 +212,7 @@ body, #wrapper {
 }
 
 .navbar .sidebar .sidebar-nav .nav > li > a {
-	background-color: #fffef3;
+	background-color: #fafafa;
 }
 
 /* ------- Global body ------- */
@@ -226,7 +224,7 @@ body, #wrapper {
 }
 
 .titlebody-clara_global {
-	background-color: #fffef3;
+	background-color: #fafafa;
 	margin-top: 0px;
 	margin-left: -30px;
 	margin-right: -30px;
