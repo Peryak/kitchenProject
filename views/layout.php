@@ -33,11 +33,18 @@
              role="navigation" style="margin-bottom: 0">
             <div class="nav collapse navbar-header navbar-collapse">
                 <a class="navbar-brand titleheader-clara_global" href="/kitchenProject/">kitchenProject</a>
+                <a class="navbar-brand navbarTitle" href='#'>Receipts</a>
+                <a class="navbar-brand navbarTitle" href='#'>Trends</a>
+                <a class="navbar-brand navbarTitle" href='#'>Burgers</a>
                 <a class="navbar-brand navbarTitle" href='?controller=posts&action=index'>Posts</a>
                 <a class="navbar-brand navbarTitle" href='?controller=steps&action=getst'>Steps</a>
             </div>
             <!-- /.navbar-header -->
             <ul class="nav navbar-top-links navbar-right">
+                <li><i class="fa fa-facebook fa-lg icon-clara_global"> </i></li>
+                <li><i class="fa fa-twitter fa-lg icon-clara_global"> </i></li>
+                <li><i class="fa fa-google-plus fa-lg icon-clara_global"> </i></li>
+                <li><i class="fa fa-instagram fa-lg icon-clara_global"> </i></li>
                 <li>
                     <form class="navbar-form" role="search">
                         <div class="input-group testSearch">
@@ -52,125 +59,47 @@
                         </div>
                     </form>
                 </li>
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle"data-toggle="dropdown" href="#">
-                        <i class="fa fa-bell fa-fw icon-clara_global"></i>
-                        <i class="fa fa-caret-down icon-clara_global"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-alerts">
-                        <li><a href="#">
-                                <div>
-                                    <i class="fa fa-comment fa-fw"></i> New Comment <span
-                                        class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">
-                                <div>
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers <span
-                                        class="pull-right text-muted small">12 minutes ago</span>
-                                </div>
-                            </a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">
-                                <div>
-                                    <i class="fa fa-envelope fa-fw"></i> Message Sent <span
-                                        class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">
-                                <div>
-                                    <i class="fa fa-tasks fa-fw"></i> New Task <span
-                                        class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">
-                                <div>
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted <span
-                                        class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a></li>
-                        <li class="divider"></li>
-                        <li><a class="text-center" href="#"> <strong>See
-                                    All Alerts</strong> <i class="fa fa-angle-right"></i>
-                            </a></li>
-                    </ul> <!-- /.dropdown-alerts --></li>
-                <!-- /.dropdown -->
-                <li class="dropdown"><a class="dropdown-toggle"
-                                        data-toggle="dropdown" href="#"> <i
-                            class="fa fa-user fa-fw icon-clara_global"></i> <i
-                            class="fa fa-caret-down icon-clara_global"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User
-                                Profile</a></li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i>
-                                Settings</a></li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i
-                                    class="fa fa-sign-out fa-fw"></i> Logout</a></li>
-                    </ul> <!-- /.dropdown-user --></li>
-                <!-- /.dropdown -->
             </ul>
             <!-- /.navbar-top-links -->
 
             <div class="sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li><a href="index.html" class="sidebartitle-clara_global"><i
-                                    class="fa fa-dashboard fa-fw"></i> <span class="menu-text">Dashboard</span></a>
+                        <li>
+                            <a href="/kitchenProject/" class="sidebartitle-clara_global">
+                                <i class="fa fa-home fa-lg homeicon"></i>
+                                <span class="menu-text">Home</span>
+                            </a>
                         </li>
-                        <li><a href="#" class="sidebartitle-clara_global"><i
-                                    class="fa fa-bar-chart-o fa-fw"></i> <span class="menu-text">Charts<span
-                                        class="fa arrow"></span></span></a>
-                            <ul class="nav nav-second-level">
-                                <li><a href="flot.html">Flot Charts</a></li>
-                                <li><a href="morris.html">Morris.js Charts</a></li>
-                            </ul> <!-- /.nav-second-level --></li>
-                        <li><a href="tables.html" class="sidebartitle-clara_global"><i
-                                    class="fa fa-table fa-fw"></i> <span class="menu-text">Tables</span></a>
+                        <li>
+                            <a href="#" class="sidebartitle-clara_global">
+                                <i class="fa fa-spoon fa-lg spoonicon"></i>
+                                <span class="menu-text">Receipts</span>
+                            </a>
                         </li>
-                        <li><a href="forms.html" class="sidebartitle-clara_global"><i
-                                    class="fa fa-edit fa-fw"></i> <span class="menu-text">Forms</span></a>
+                        <li>
+                            <a href="#" class="sidebartitle-clara_global">
+                                <i class="fa fa-circle-thin fa-lg circleicon"></i>
+                                <span class="menu-text">Burgers</span>
+                            </a>
                         </li>
-                        <li><a href="#" class="sidebartitle-clara_global"><i
-                                    class="fa fa-wrench fa-fw"></i> <span class="menu-text">UI
-                                            Elements<span class="fa arrow"></span>
-                                    </span></a>
-                            <ul class="nav nav-second-level">
-                                <li><a href="buttons.html">Buttons</a></li>
-                                <li><a href="icons.html">Icons</a></li>
-                                <li><a href="modals.html">Modals</a></li>
-                                <li><a href="notifications.html">Notifications</a></li>
-                                <li><a href="panels-wells.html">Panels and Wells</a></li>
-                                <li><a href="timeline.html">Timeline</a></li>
-                            </ul> <!-- /.nav-second-level --></li>
-                        <li><a href="#" class="sidebartitle-clara_global"><i
-                                    class="fa fa-sitemap fa-fw"></i> <span class="menu-text">Multi-Level
-                                            Dropdown<span class="fa arrow"></span>
-                                    </span></a>
-                            <ul class="nav nav-second-level">
-                                <li><a href="#">Second Level Item</a></li>
-                                <li><a href="#">Second Level Item</a></li>
-                                <li><a href="#">Third Level <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li><a href="#">Third Level Item</a></li>
-                                        <li><a href="#">Third Level Item</a></li>
-                                        <li><a href="#">Third Level Item</a></li>
-                                        <li><a href="#">Third Level Item</a></li>
-                                    </ul> <!-- /.nav-third-level --></li>
-                            </ul> <!-- /.nav-second-level --></li>
-                        <li><a href="#" class="sidebartitle-clara_global"><i
-                                    class="fa fa-files-o fa-fw"></i> <span class="menu-text">Sample
-                                            Pages<span class="fa arrow"></span>
-                                    </span></a>
-                            <ul class="nav nav-second-level">
-                                <li><a href="blank.html">Blank Page</a></li>
-                                <li><a href="login.html">Login Page</a></li>
-                            </ul> <!-- /.nav-second-level -->
+                        <li>
+                            <a href="#" class="sidebartitle-clara_global">
+                                <i class="fa fa-users fa-lg usersicon"></i>
+                                <span class="menu-text">Trends</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="?controller=posts&action=index" class="sidebartitle-clara_global">
+                                <i class="fa fa-newspaper-o fa-lg newspapericon"></i>
+                                <span class="menu-text">Posts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="?controller=steps&action=getst" class="sidebartitle-clara_global">
+                                <i class="fa fa-dashboard fa-lg dashboardicon"></i>
+                                <span class="menu-text">Steps</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -188,14 +117,7 @@
         </nav>
 
         <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header titlebody-clara_global">Home</h1>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-
+            
             <!-- In the middle we require another file: routes.php
                 The only part we still need is the main area of our page
                 We can determine what view we need to put there
@@ -222,6 +144,19 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="views/assets/js/global.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="views/assets/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="views/assets/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+        $(document).ready(function() {
+            $('#dataTables-example').DataTable({
+                responsive: true
+            });
+        });
+    </script>
 
 </body>
 
