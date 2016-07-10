@@ -440,8 +440,8 @@ li > .list-clara_global:hover {
 .btninfo-clara_global, 
 .btninfo-clara_global:visited {
 	outline: none !important;
-	border-color: #32393f;
-	background-color: #3d4b55;
+	border-color: #5b9bcb;
+	background-color: #8bb5d2;
 	color: #fafafa;
 }
 
@@ -452,7 +452,7 @@ li > .list-clara_global:hover {
 .btninfo-clara_global:focus,
 .btninfo-clara_global:active {
 	outline: none !important;
-	background-color: #32393f;
+	background-color: #5b9bcb;
 	color: #fafafa;
 }
 
