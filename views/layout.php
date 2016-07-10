@@ -178,7 +178,7 @@
                     <div class="menu-icon">
                         <div class="swipeablebtn-clara_global">
                             <i class="fa fa-chevron-left fa-lg iconswipeablebtn-clara_global"></i>
-                            <span class="titleswipeablebtn-clara_global">Réduire le menu latéral</span>
+                            <span class="titleswipeablebtn-clara_global">Reduce the sidebar menu</span>
                         </div>
                     </div>
                 </div>
@@ -190,7 +190,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header titlebody-clara_global">Accueil</h1>
+                    <h1 class="page-header titlebody-clara_global">Home</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
