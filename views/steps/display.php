@@ -1,6 +1,11 @@
- <div class="row">
-    <h3>Marmiton</h3>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header titlebody-clara_global">Steps</h1>
+    </div>
+    <!-- /.col-lg-12 -->
 </div>
+<!-- /.row -->
+
 <div class="row">
     <p>
         <a href="/kitchenProject/views/steps/create.php" class="btn btnsend-clara_global">Create</a>
