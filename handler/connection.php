@@ -46,24 +46,3 @@ class Database
         self::$cont = null;
     }
 }
-/*
-class Db {
-
-    private static $instance = NULL;
-
-    //As the class is a singleton, we make __construct() and __clone() private so that no one can call new Db()
-    private function __construct() {}
-
-    private function __clone() {}
-
-    public static function getInstance() {
-        //A singleton class allows us to return an instance of the connection
-        // and always the same as we only need one to execute all our queries
-        if (!isset(self::$instance)) {
-            $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-            // It has an $instance variable that retains the connection object (PDO here)
-            self::$instance = new PDO('mysql:host=localhost;dbname=kitchenproject', 'root', 'root', $pdo_options);
-        }
-        return self::$instance;
-    }
-}*/

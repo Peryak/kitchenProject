@@ -41,7 +41,15 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
       <div class="panel panel-default">
         <div class="panel-heading panelheading-clara_global">
 
-            <span class="titlepanel-clara_global">Default Panel</span>
+            <span">
+              <?php
+              foreach ($var->tab as $item) {
+                if (!is_bool($item)){
+                  echo ("<h1 class='titlepanelbody-clara_global'>" . $item->getName() . "</h1>");
+                }
+              }
+              ?>
+            </span>
 
         </div>
         <div class="panel-body">
@@ -49,7 +57,6 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
             <?php
             foreach ($var->tab as $item) {
               if (!is_bool($item)){
-                echo ("<h1 class='titlepanelbody-clara_global'>" . $item->getName() . "</h1>");
                 echo("<h5 class='userpanelbody-clara_global'> by " . $item->getMail() . "</h5>");
               }
             }
@@ -57,47 +64,52 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
 
           <!-- Nav tabs -->
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#home" data-toggle="tab">Home</a>
+            <li class="active"><a href="#etape_1" data-toggle="tab">Etape 1</a>
             </li>
-            <li><a href="#profile" data-toggle="tab">Profile</a>
+            <li><a href="#etape_2" data-toggle="tab">Etape 2</a>
             </li>
-            <li><a href="#messages" data-toggle="tab">Messages</a>
+            <li><a href="#etape_3" data-toggle="tab">Etape 3</a>
             </li>
-            <li><a href="#settings" data-toggle="tab">Settings</a>
+            <li><a href="#etape_4" data-toggle="tab">Etape 4</a>
             </li>
           </ul>
 
           <!-- Tab panes -->
           <div class="tab-content">
-            <div class="tab-pane fade in active" id="home">
-              <h4>Home Tab</h4>
+            <div class="tab-pane fade in active" id="etape_1">
+              <h4>Ingrédients</h4>
+              <?php
+              foreach ($var->tab as $item) {
+                if (!is_bool($item)) {
+                  foreach ($item->getIngredients() as $subItem) {
+                    echo("<b>" . $subItem->getName() . "</b> - value: " . $subItem->getValue() . ", quantity: " . $subItem->getQuantity() . "</br>");
+                  }
+                }
+              }
+              ?>
+            </div>
+            <div class="tab-pane fade" id="etape_2">
+              <h4>Ingrédients</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="tab-pane fade" id="profile">
-              <h4>Profile Tab</h4>
+            <div class="tab-pane fade" id="etape_3">
+              <h4>Ingrédients</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="tab-pane fade" id="messages">
-              <h4>Messages Tab</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="tab-pane fade" id="settings">
-              <h4>Settings Tab</h4>
+            <div class="tab-pane fade" id="etape_4">
+              <h4>Ingrédients</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
 
             <?php
-            foreach ($var->tab as $item) {
+            /*foreach ($var->tab as $item) {
               if (!is_bool($item)){
-                foreach ($item->getIngredients() as $subItem) {
-                  echo ("" . $subItem->getName() . $subItem->getValue() . $subItem->getQuantity() . "</br>");
-                }
                 foreach ($item->getSteps() as $subItem) {
                   echo ("" . $subItem->getDescription() . "</br>");
                 }
               }
-            }
+            }*/
             ?>
 
         </div>
