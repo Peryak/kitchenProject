@@ -41,7 +41,7 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
       <div class="panel panel-default">
         <div class="panel-heading panelheading-clara_global">
 
-            <span">
+            <span>
               <?php
               foreach ($var->tab as $item) {
                 if (!is_bool($item)){
@@ -54,30 +54,22 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
         </div>
         <div class="panel-body">
 
-            <?php
-            foreach ($var->tab as $item) {
-              if (!is_bool($item)){
-                echo("<h5 class='userpanelbody-clara_global'> by " . $item->getMail() . "</h5>");
-              }
-            }
-            ?>
-
           <!-- Nav tabs -->
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#etape_1" data-toggle="tab">Etape 1</a>
+            <li class="active"><a href="#step_1" data-toggle="tab">Step 1</a>
             </li>
-            <li><a href="#etape_2" data-toggle="tab">Etape 2</a>
+            <li><a href="#step_2" data-toggle="tab">Step 2</a>
             </li>
-            <li><a href="#etape_3" data-toggle="tab">Etape 3</a>
+            <li><a href="#step_3" data-toggle="tab">Step 3</a>
             </li>
-            <li><a href="#etape_4" data-toggle="tab">Etape 4</a>
+            <li><a href="#step_4" data-toggle="tab">Step 4</a>
             </li>
           </ul>
 
           <!-- Tab panes -->
           <div class="tab-content">
-            <div class="tab-pane fade in active" id="etape_1">
-              <h4>Ingrédients</h4>
+            <div class="tab-pane fade in active" id="step_1">
+              <h5>Ingredients</h5>
               <?php
               foreach ($var->tab as $item) {
                 if (!is_bool($item)) {
@@ -88,17 +80,17 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
               }
               ?>
             </div>
-            <div class="tab-pane fade" id="etape_2">
-              <h4>Ingrédients</h4>
+            <div class="tab-pane fade" id="step_2">
+              <h5>Ingredients</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="tab-pane fade" id="etape_3">
-              <h4>Ingrédients</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="tab-pane fade" id="step_3">
+              <h5>Ingredients</h5>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <div class="tab-pane fade" id="etape_4">
-              <h4>Ingrédients</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="tab-pane fade" id="step_4">
+              <h5>Ingredients</h5>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
 
@@ -115,7 +107,13 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
         </div>
         <div class="panel-footer panelfooter-clara_global">
 
-            Panel Footer
+          <?php
+          foreach ($var->tab as $item) {
+            if (!is_bool($item)){
+              echo("<h5 class='userpanelbody-clara_global'> by " . $item->getMail() . "</h5>");
+            }
+          }
+          ?>
 
         </div>
       </div>
