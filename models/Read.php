@@ -30,7 +30,7 @@ class Read{
     $recp->comments = $req->getComments($handle, $recp->id);
     var_dump($recp->comments);
 */
-    // return le tableau des ellement if TRUE 1 seule recette if FALSE plusieurs recettes
+    // return le tableau des éléments if TRUE 1 seule recette if FALSE plusieurs recettes
 
     return (array($st, $recp));
 
