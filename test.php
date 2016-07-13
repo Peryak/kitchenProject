@@ -1,66 +1,14 @@
 <?php
-
 require_once "./models/Read.php";
 require_once "./handler/connection.php";
-
 $pdo = Database::connect();
-
 $var = new Read();
 $var->tab = $var->receiptAction($pdo, 'recette de test');
-/*
-foreach ($var->tab as $item){
-  var_dump($item);
-}
-*/
 
+$step = new myRecette('12', 'truc@machin', "title", '15', '15', "resumé");
+$info = $step->get();
+var_dump($info);
 ?>
-<<<<<<< HEAD
-<html>
-  <div class="header">
-    <?php
-      foreach ($var->tab as $item) {
-        if (!is_bool($item)){
-          echo ("<h1>" . $item->getName() . "</h1>");
-        }
-      }
-    ?>
-  </div>
-  <div class="body">
-    <?php
-      foreach ($var->tab as $item) {
-        if (!is_bool($item)){
-          echo ("<h3> User : " . $item->getMail() . "</h3>");
-          //$subItem = $item->getIngredients()[0];
-          foreach ($item->getIngredients()[0] as $r){
-            echo ($r->getName() . $r->getValue() . $r->getQuantity() . "</br>");
-          }
-
-          //$subItem = $item->getSteps()[0];
-          //var_dump($subItem);
-          foreach ($item->getSteps()[0] as $r) {
-            echo ($r->getDescription() . "</br>");
-          }
-        }
-      }
-    ?>
-  </div>
-  <!--<table>
-    <tbody>
-      <tr>
-        <?php foreach ($var->tab as $item) {
-          //echo("<td>" . var_dump($item) . "</td>");
-          if (!is_bool($item)) {
-            //echo ("<td>" . $item->getName() . "</td>");
-            echo ("<td>" . $item->getMail() . "</td>");
-            echo ("<tr>");
-            foreach ($item->getIngredients() as $subItem) {
-              echo ("<td>" . $subItem->getName() . "</td>");
-            }
-            echo ("</tr>");
-            echo ("<tr>");
-            foreach ($item->getSteps() as $subItem) {
-              echo ("<td>" . $subItem->getDescription() . "</td>");
-=======
 
 <head>
   <meta charset="utf-8">
@@ -125,7 +73,7 @@ foreach ($var->tab as $item){
               <?php
               foreach ($var->tab as $item) {
                 if (!is_bool($item)) {
-                  foreach ($item->getIngredients() as $subItem) {
+                  foreach ($item->getIngredients()[0] as $subItem) {
                     echo("<b>" . $subItem->getName() . "</b> - value: " . $subItem->getValue() . ", quantity: " . $subItem->getQuantity() . "</br>");
                   }
                 }
@@ -163,7 +111,6 @@ foreach ($var->tab as $item){
           foreach ($var->tab as $item) {
             if (!is_bool($item)){
               echo("<h5 class='userpanelbody-clara_global'> by " . $item->getMail() . "</h5>");
->>>>>>> f5d5c0f80b099c5ef6b4bfb5e00da59fa3fc40dc
             }
           }
           ?>

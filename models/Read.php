@@ -41,7 +41,7 @@ class Read{
        //$pdo = new PDO('mysql:localhost','kitchen','root', 'root');
        $stmt = $handle->query("SELECT * from receipts;");
        foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $r) {
-           $res = new myRecette($r['id'], $r['email'], $r['title'], $r['cook_time'], $r['prep_time']);
+           $res = new myRecette($r['id'], $r['email'], $r['title'], $r['cook_time'], $r['prep_time'], $r['summary']);
            array_push($arres, $res);
        }
        return ($res);

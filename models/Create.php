@@ -5,7 +5,7 @@ class Create
 
     public function receiptAction($_POST, $handle)
     {
-
+        var_dump($_POST);
         $recp;
         //ajouter l'ellement reccette
         $res = $this->putRecette($handle, $recp->mail, $ecp->name);
@@ -69,7 +69,8 @@ class Create
     }
 
     private function putStep($handle, $step) {
-      $sql = "";
+      $step->get()
+      $sql = "INSERT INTO ingredeints (receipt_id, step_order, description) VALUES ('$rId', '$step_order', '$description')";
       $handle->query($sql);
       //testet la valeure de retour de la base
       $pass = TRUE
@@ -78,7 +79,7 @@ class Create
     }
 
     public function putComment($handle, $comment) {
-      $sql = 
+      $sql = "";
     }
 
     public function stepsAction()

@@ -35,4 +35,12 @@ class myQUantity{
   public function getValue($value) {
     return ($this->value);
   }
+
+  public function get() {
+    $tab = array(
+      'id' => $this->getId(),
+      'value' => $this->getValue(),
+    );
+    return $tab;
+  }
 }

@@ -12,16 +12,18 @@ class myRecette{
   private $mail;
   private $cookTime;
   private $prepTime;
+  private $summary;
   private $ingredients = array();
   private $steps = array();
   private $comments = array();
 
-  public function __construct($id, $mail, $title, $cookTime, $prepTime) {
+  public function __construct($id, $mail, $title, $cookTime, $prepTime, $summary) {
     $this->addName($title);
     $this->addId($id);
     $this->addMail($mail);
     $this->addCT($cookTime);
     $this->addPT($prepTime);
+    $this->addSummary($summary);
   }
 
   public function addName($name) {
@@ -54,6 +56,10 @@ class myRecette{
 
   public function addComments($comment) {
     array_push($this->comments, $comment);
+  }
+
+  private function addSummary($summary) {
+    $this->summary = $summary;
   }
 
   public function fill($name, $id, $ingredients, $steps, $comments) {
@@ -95,5 +101,24 @@ class myRecette{
 
   public function getComments() {
     return ($this->comments);
+  }
+
+  private function getSummary() {
+    return ($this->summary);
+  }
+
+  public function get() {
+    $tab = array(
+      'name' => $this->getName(),
+      'mail' => $this->getMail(),
+      'id'  => $this->getId(),
+      'cookTime' => $this->getCT(),
+      'prepTime' => $this->getPT(),
+      'ingredients' => $this->getIngredients(),
+      'steps' => $this->getSteps(),
+      'comments' => $this->getComments(),
+      'summary' => $this->getSummary(),
+    );
+    return $tab;
   }
 }

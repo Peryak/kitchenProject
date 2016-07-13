@@ -59,6 +59,12 @@ class mySteps{
   }
 
   public function get() {
-    return ($this);
+    $tab = array(
+      'id' => $this->getId(),
+      'rId' => $this->getRId(),
+      'step_order' => $this->getOrder(),
+      'description' => $this->getDescription(),
+    );
+    return ($tab);
   }
 }
