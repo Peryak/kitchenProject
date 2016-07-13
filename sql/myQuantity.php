@@ -6,8 +6,8 @@
   */
 
 class myQUantity{
-  public $id;
-  public $value;
+  private $id;
+  private $value;
 
   public function __construct($id, $value) {
     $this->id = $id;
@@ -34,5 +34,13 @@ class myQUantity{
 
   public function getValue($value) {
     return ($this->value);
+  }
+
+  public function get() {
+    $tab = array(
+      'id' => $this->getId(),
+      'value' => $this->getValue(),
+    );
+    return $tab;
   }
 }

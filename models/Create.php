@@ -5,7 +5,7 @@ class Create
 
     public function receiptAction($_POST, $handle)
     {
-
+        var_dump($_POST);
         $recp;
         //ajouter l'ellement reccette
         $res = $this->putRecette($handle, $recp->mail, $ecp->name);
@@ -34,14 +34,52 @@ class Create
         while ($row = $req->fetch()) {
             $id = $row[0];
             //echo $id;
-            return ($id);
+            //return ($id);
             $pass = TRUE;
             return (array('pass' => $pass, 'rId' => $rId));
         }
     }
 
     private function putIngredients($handle, $ingredients) {
+      foreach ($ingredients as $key) {
+        $pass = putIngredient($handle, $key);
+        if ($pass == FALSE) {
+          return (array('pass' => $pass, 'message' => "erreur lprs de l'ajout d'un ingredients"));
+        }
+      }
 
+    }
+
+    private function putIngredient($handle, $ingredient) {
+      $sql = "INSERT INTO ingredeints (name, receipt_id, quantity_id, value_ing) VALUES ('$name', '$rId', '$quantity', '$value_ing')";
+      $handle->query($sql);
+      //testet la valeure de retour de la base
+      $pass = TRUE
+      //return la valeur de retour"
+      return ($pass);
+    }
+
+    private function putSteps ($handle, $steps) {
+      foreach ($steps as $key) {
+        $pass = putStep($handle, $key);
+        if ($pass == FALSE) {
+          return (array('pass' => $pass, 'message' => "erreur lors de l'ajout d'une etape"));
+        }
+      }
+    }
+
+    private function putStep($handle, $step) {
+      $step->get()
+      $sql = "INSERT INTO ingredeints (receipt_id, step_order, description) VALUES ('$rId', '$step_order', '$description')";
+      $handle->query($sql);
+      //testet la valeure de retour de la base
+      $pass = TRUE
+      //return la valeur de retour"
+      return ($pass);
+    }
+
+    public function putComment($handle, $comment) {
+      $sql = "";
     }
 
     public function stepsAction()
