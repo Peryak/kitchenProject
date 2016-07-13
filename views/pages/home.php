@@ -470,6 +470,153 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
     </div>
     <!-- /.col-lg-12 -->
 
+
+
+
+
+
+    <div class="row">
+        <!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading panelheading-clara_global">
+
+                    <span>
+                    <?php
+                    foreach ($var->tab as $item) {
+                        if (!is_bool($item)){
+                            echo ("<h1 class='titlepanelbody-clara_global'>" . $item->getName() . "</h1>");
+                        }
+                    }
+                    ?>
+                    </span>
+
+                </div>
+                <div class="panel-body">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#step_1" data-toggle="tab">Receipt</a>
+                        </li>
+                        <li><a href="#step_2" data-toggle="tab">Ingredients</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="step_1">
+                            <div class="col-md-12">
+                                <h5>Make a <em>receipt</em> !</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="step_2">
+                            <h5>Ingredients</h5>
+                            <?php
+                            foreach ($var->tab as $item) {
+                                if (!is_bool($item)) {
+                                    foreach ($item->getIngredients() as $subItem) {
+                                        echo("<b>" . $subItem->getName() . "</b> - value: " . $subItem->getValue() . ", quantity: " . $subItem->getQuantity() . "</br>");
+                                    }
+                                }
+                            }
+                            ?>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="panel-footer panelfooter-clara_global">
+                    <div class="col-md-9">
+                        <?php
+                        foreach ($var->tab as $item) {
+                            if (!is_bool($item)){
+                                echo("<h5 class='userpanelbody-clara_global'> by " . $item->getMail() . "</h5>");
+                            }
+                        }
+                        ?>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-default pull-right">Let's cook!</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading panelheading-clara_global">
+
+                    <span>
+                    <?php
+                    foreach ($var->tab as $item) {
+                        if (!is_bool($item)){
+                            echo ("<h1 class='titlepanelbody-clara_global'>" . $item->getName() . "</h1>");
+                        }
+                    }
+                    ?>
+                    </span>
+
+                </div>
+                <div class="panel-body">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#step_1" data-toggle="tab">Step 1</a>
+                        </li>
+                        <li><a href="#step_2" data-toggle="tab">Step 2</a>
+                        </li>
+                        <li><a href="#step_3" data-toggle="tab">Step 3</a>
+                        </li>
+                        <li><a href="#step_4" data-toggle="tab">Step 4</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="step_1">
+                            <h5>Ingredients</h5>
+                            <?php
+                            foreach ($var->tab as $item) {
+                                if (!is_bool($item)) {
+                                    foreach ($item->getIngredients() as $subItem) {
+                                        echo("<b>" . $subItem->getName() . "</b> - value: " . $subItem->getValue() . ", quantity: " . $subItem->getQuantity() . "</br>");
+                                    }
+                                }
+                            }
+                            ?>
+                        </div>
+                        <div class="tab-pane fade" id="step_2">
+                            <h5>Ingredients</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="tab-pane fade" id="step_3">
+                            <h5>Ingredients</h5>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="tab-pane fade" id="step_4">
+                            <h5>Ingredients</h5>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="panel-footer panelfooter-clara_global">
+
+                    <?php
+                    foreach ($var->tab as $item) {
+                        if (!is_bool($item)){
+                            echo("<h5 class='userpanelbody-clara_global'> by " . $item->getMail() . "</h5>");
+                        }
+                    }
+                    ?>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
         <!-- /.col-lg-6 -->
         <div class="col-lg-6">
@@ -610,180 +757,6 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
                     </div>
-
-                    <?php
-                    /*foreach ($var->tab as $item) {
-                      if (!is_bool($item)){
-                        foreach ($item->getSteps() as $subItem) {
-                          echo ("" . $subItem->getDescription() . "</br>");
-                        }
-                      }
-                    }*/
-                    ?>
-
-                </div>
-                <div class="panel-footer panelfooter-clara_global">
-
-                    <?php
-                    foreach ($var->tab as $item) {
-                        if (!is_bool($item)){
-                            echo("<h5 class='userpanelbody-clara_global'> by " . $item->getMail() . "</h5>");
-                        }
-                    }
-                    ?>
-
-                </div>
-            </div>
-        </div>
-        <!-- /.col-lg-6 -->
-        <div class="col-lg-6">
-            <div class="panel panel-default">
-                <div class="panel-heading panelheading-clara_global">
-
-                    <span>
-                    <?php
-                    foreach ($var->tab as $item) {
-                        if (!is_bool($item)){
-                            echo ("<h1 class='titlepanelbody-clara_global'>" . $item->getName() . "</h1>");
-                        }
-                    }
-                    ?>
-                    </span>
-
-                </div>
-                <div class="panel-body">
-
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#step_1" data-toggle="tab">Step 1</a>
-                        </li>
-                        <li><a href="#step_2" data-toggle="tab">Step 2</a>
-                        </li>
-                        <li><a href="#step_3" data-toggle="tab">Step 3</a>
-                        </li>
-                        <li><a href="#step_4" data-toggle="tab">Step 4</a>
-                        </li>
-                    </ul>
-
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="step_1">
-                            <h5>Ingredients</h5>
-                            <?php
-                            foreach ($var->tab as $item) {
-                                if (!is_bool($item)) {
-                                    foreach ($item->getIngredients() as $subItem) {
-                                        echo("<b>" . $subItem->getName() . "</b> - value: " . $subItem->getValue() . ", quantity: " . $subItem->getQuantity() . "</br>");
-                                    }
-                                }
-                            }
-                            ?>
-                        </div>
-                        <div class="tab-pane fade" id="step_2">
-                            <h5>Ingredients</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="tab-pane fade" id="step_3">
-                            <h5>Ingredients</h5>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <div class="tab-pane fade" id="step_4">
-                            <h5>Ingredients</h5>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </div>
-
-                    <?php
-                    /*foreach ($var->tab as $item) {
-                      if (!is_bool($item)){
-                        foreach ($item->getSteps() as $subItem) {
-                          echo ("" . $subItem->getDescription() . "</br>");
-                        }
-                      }
-                    }*/
-                    ?>
-
-                </div>
-                <div class="panel-footer panelfooter-clara_global">
-
-                    <?php
-                    foreach ($var->tab as $item) {
-                        if (!is_bool($item)){
-                            echo("<h5 class='userpanelbody-clara_global'> by " . $item->getMail() . "</h5>");
-                        }
-                    }
-                    ?>
-
-                </div>
-            </div>
-        </div>
-        <!-- /.col-lg-6 -->
-        <div class="col-lg-6">
-            <div class="panel panel-default">
-                <div class="panel-heading panelheading-clara_global">
-
-                    <span>
-                    <?php
-                    foreach ($var->tab as $item) {
-                        if (!is_bool($item)){
-                            echo ("<h1 class='titlepanelbody-clara_global'>" . $item->getName() . "</h1>");
-                        }
-                    }
-                    ?>
-                    </span>
-
-                </div>
-                <div class="panel-body">
-
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#step_1" data-toggle="tab">Step 1</a>
-                        </li>
-                        <li><a href="#step_2" data-toggle="tab">Step 2</a>
-                        </li>
-                        <li><a href="#step_3" data-toggle="tab">Step 3</a>
-                        </li>
-                        <li><a href="#step_4" data-toggle="tab">Step 4</a>
-                        </li>
-                    </ul>
-
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="step_1">
-                            <h5>Ingredients</h5>
-                            <?php
-                            foreach ($var->tab as $item) {
-                                if (!is_bool($item)) {
-                                    foreach ($item->getIngredients() as $subItem) {
-                                        echo("<b>" . $subItem->getName() . "</b> - value: " . $subItem->getValue() . ", quantity: " . $subItem->getQuantity() . "</br>");
-                                    }
-                                }
-                            }
-                            ?>
-                        </div>
-                        <div class="tab-pane fade" id="step_2">
-                            <h5>Ingredients</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="tab-pane fade" id="step_3">
-                            <h5>Ingredients</h5>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <div class="tab-pane fade" id="step_4">
-                            <h5>Ingredients</h5>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </div>
-
-                    <?php
-                    /*foreach ($var->tab as $item) {
-                      if (!is_bool($item)){
-                        foreach ($item->getSteps() as $subItem) {
-                          echo ("" . $subItem->getDescription() . "</br>");
-                        }
-                      }
-                    }*/
-                    ?>
 
                 </div>
                 <div class="panel-footer panelfooter-clara_global">
