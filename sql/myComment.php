@@ -7,11 +7,11 @@
 
 class myComment{
 
-  public $name;
-  public $rId;
-  public $id;
-  public $note;
-  public $comment;
+  private $name;
+  private $rId;
+  private $id;
+  private $note;
+  private $comment;
 
   public function __construct($pseudo, $rId, $id, $note, $comment) {
       $this->name = $pseudo;

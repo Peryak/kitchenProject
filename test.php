@@ -1,13 +1,13 @@
 <?php
-
 require_once "./models/Read.php";
 require_once "./handler/connection.php";
-
 $pdo = Database::connect();
-
 $var = new Read();
 $var->tab = $var->receiptAction($pdo, 'recette de test');
 
+$step = new myRecette('12', 'truc@machin', "title", '15', '15', "resumé");
+$info = $step->get();
+var_dump($info);
 ?>
 
 <head>
@@ -73,7 +73,7 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
               <?php
               foreach ($var->tab as $item) {
                 if (!is_bool($item)) {
-                  foreach ($item->getIngredients() as $subItem) {
+                  foreach ($item->getIngredients()[0] as $subItem) {
                     echo("<b>" . $subItem->getName() . "</b> - value: " . $subItem->getValue() . ", quantity: " . $subItem->getQuantity() . "</br>");
                   }
                 }

@@ -7,17 +7,23 @@
 
 class myRecette{
 
-  public $name;
-  public $id;
-  public $mail;
-  public $ingredients = array();
-  public $steps = array();
-  public $comments = array();
+  private $name;
+  private $id;
+  private $mail;
+  private $cookTime;
+  private $prepTime;
+  private $summary;
+  private $ingredients = array();
+  private $steps = array();
+  private $comments = array();
 
-  public function __construct($id, $mail, $title) {
+  public function __construct($id, $mail, $title, $cookTime, $prepTime, $summary) {
     $this->addName($title);
     $this->addId($id);
     $this->addMail($mail);
+    $this->addCT($cookTime);
+    $this->addPT($prepTime);
+    $this->addSummary($summary);
   }
 
   public function addName($name) {
@@ -32,6 +38,14 @@ class myRecette{
     $this->id = $id;
   }
 
+  public function addCT($cookTime) {
+    $this->cookTime = $cookTime;
+  }
+
+  public function addPT($prepTime) {
+    $this->prepTime = $prepTime;
+  }
+
   public function addIngredients($ingredient) {
     array_push($this->ingredients, $ingredient);
   }
@@ -42,6 +56,10 @@ class myRecette{
 
   public function addComments($comment) {
     array_push($this->comments, $comment);
+  }
+
+  private function addSummary($summary) {
+    $this->summary = $summary;
   }
 
   public function fill($name, $id, $ingredients, $steps, $comments) {
@@ -65,6 +83,14 @@ class myRecette{
     return ($this->id);
   }
 
+  public function getCT() {
+    return ($this->cookTime);
+  }
+
+  public function getPT() {
+    return ($this->prepTime);
+  }
+
   public function getIngredients() {
     return ($this->ingredients);
   }
@@ -75,5 +101,24 @@ class myRecette{
 
   public function getComments() {
     return ($this->comments);
+  }
+
+  private function getSummary() {
+    return ($this->summary);
+  }
+
+  public function get() {
+    $tab = array(
+      'name' => $this->getName(),
+      'mail' => $this->getMail(),
+      'id'  => $this->getId(),
+      'cookTime' => $this->getCT(),
+      'prepTime' => $this->getPT(),
+      'ingredients' => $this->getIngredients(),
+      'steps' => $this->getSteps(),
+      'comments' => $this->getComments(),
+      'summary' => $this->getSummary(),
+    );
+    return $tab;
   }
 }
