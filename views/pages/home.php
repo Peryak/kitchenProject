@@ -473,7 +473,7 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
 
 
 
-
+theo
 
     <div class="row">
         <!-- /.col-lg-6 -->
@@ -580,7 +580,7 @@ $var->tab = $var->receiptAction($pdo, 'recette de test');
                             <?php
                             foreach ($var->tab as $item) {
                                 if (!is_bool($item)) {
-                                    foreach ($item->getIngredients() as $subItem) {
+                                    foreach ($item->getIngredients()[0] as $subItem) {
                                         echo("<b>" . $subItem->getName() . "</b> - value: " . $subItem->getValue() . ", quantity: " . $subItem->getQuantity() . "</br>");
                                     }
                                 }

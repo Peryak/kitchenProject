@@ -1,3 +1,10 @@
+<?php
+require_once "./models/Read.php";
+require_once "./handler/connection.php";
+
+$pdo = Database::connect();
+?>
+
 <DOCTYPE html>
 <html lang="en">
 
@@ -22,6 +29,34 @@
     <!-- Global CSS -->
     <link rel="stylesheet" type="text/css" href="views/assets/css/special.css">
     <link rel="stylesheet" type="text/css" href="views/assets/css/global.css">
+
+    <!-- jQuery -->
+    <script src="views/assets/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- JavaScript for the swipeable sidebar -->
+    <script src="views/assets/js/sidebar.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="views/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="views/assets/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="views/assets/js/global.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="views/assets/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="views/assets/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+        $(document).ready(function() {
+            $('#dataTables-example').DataTable({
+                responsive: true
+            });
+        });
+    </script>
 
 </head>
 
@@ -129,34 +164,6 @@
         </div>
 
     </div>
-
-    <!-- jQuery -->
-    <script src="views/assets/bower_components/jquery/dist/jquery.min.js"></script>
-
-    <!-- JavaScript for the swipeable sidebar -->
-    <script src="views/assets/js/sidebar.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="views/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="views/assets/bower_components/metisMenu/dist/metisMenu.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="views/assets/js/global.js"></script>
-
-    <!-- DataTables JavaScript -->
-    <script src="views/assets/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="views/assets/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
-
-    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-    <script>
-        $(document).ready(function() {
-            $('#dataTables-example').DataTable({
-                responsive: true
-            });
-        });
-    </script>
 
 </body>
 
