@@ -81,17 +81,42 @@ $pdo = Database::connect();
                 <li><i class="fa fa-google-plus fa-lg icon-clara_global"> </i></li>
                 <li><i class="fa fa-instagram fa-lg icon-clara_global"> </i></li>
                 <li>
-                    <form class="navbar-form" role="search">
+                    <!--<form class="navbar-form" role="search" method="post">
                         <div class="input-group testSearch">
-                            <input type="text" class="form-control"
-                                   placeholder="Rechercher" name="placeholder-clara_global"
-                                   id="placeholder-clara_global">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Rechercher"
+                              name="toolbar_search"
+                              id="placeholder-clara_global">
                             <div class="input-group-btn">
-                                <button class="btn btnsearch-clara_global" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
+                              <imput
+                                class="btn btnsearch-clara_global"
+                                type="submit">
+                                  <i class="fa fa-search"></i>
+                              </imput>
                             </div>
                         </div>
+                    </form>-->
+                    <form method="post" class="navbar-form" role="search">
+                      <div class="input-group testSearch">
+                        <input
+                          type="text"
+                          name="toolbar_search"
+                          class="form-control"
+                          placeholder="Search"
+                          id="placeholder-clara_global">
+                        <div class="input-group-btn">
+                          <input
+                            type="submit"
+                            value=""
+                            class="btn btnsearch-clara_global">
+                            <imput>
+                              <i class="fa fa-search"></i>
+                            </imput>
+                          </input>
+                        </div>
+                      </div>
                     </form>
                 </li>
             </ul>
@@ -152,7 +177,7 @@ $pdo = Database::connect();
         </nav>
 
         <div id="page-wrapper">
-            
+
             <!-- In the middle we require another file: routes.php
                 The only part we still need is the main area of our page
                 We can determine what view we need to put there
