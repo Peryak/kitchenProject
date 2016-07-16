@@ -57,7 +57,6 @@ class myIngredients{
   public function getId() {
     return ($this->id);
   }
-
   public function getRId() {
     return ($this->rId);
   }
@@ -68,6 +67,17 @@ class myIngredients{
 
   public function getValue() {
     return ($this->value_ing);
+  }
+
+  public function get() {
+    $tab = array(
+      'name' => $this->getName(),
+      'id' => $this->getId(),
+      'rId' => $this->getRId(),
+      'quantity' => $this->getQuantity(),
+      'value_ing' => $this->getValue(),
+    );
+    return $tab;
   }
 
 }

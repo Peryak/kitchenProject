@@ -27,7 +27,7 @@ class Read{
     //var_dump($recp->steps);
     //recuperer les commentaires
 /*
-    $recp->comments = $req->getComments($handle, $recp->id);
+    $recp->comments = $this->getComments($handle, $recp->id);
     var_dump($recp->comments);
 */
     // return le tableau des éléments if TRUE 1 seule recette if FALSE plusieurs recettes
@@ -36,21 +36,22 @@ class Read{
 
   }
 
-  private function getReceiptByName($handle,$name) {
-       $arres = array();
+  private function getReceiptByName($handle, $name) {
+       //$arres = array();
        //$pdo = new PDO('mysql:localhost','kitchen','root', 'root');
-       $stmt = $handle->query("SELECT * from receipts;");
+       $stmt = $handle->query("SELECT * from receipts WHERE name LIKE '" . $name . "'");
        foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $r) {
-           $res = new myRecette($r['id'], $r['email'], $r['title'], $r['cook_time'], $r['prep_time'], $r['summary']);
-           array_push($arres, $res);
+           $res = new myRecette($r['id'], $r['email'], $r['name'], $r['cook_time'], $r['prep_time'], $r['summary']);
+           //array_push($arres, $res);
        }
        return ($res);
   }
 
-  private function getReceiptById($handle, $id) {
+  public function getReceiptById($handle, $id) {
     //$pdo = new PDO('mysql:localhost','kitchen','root', 'root');
     $sql = "SELECT * from receipts WHERE id=" . $id . ";";
     $stmt = $handle->query($sql);
+    //var_dump($stmt);
     foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $r) {
       $res = new myRecette($r['id'], $r['email'], $r['title'], $r['cook_time'], $r['prep_time']);
     }
@@ -88,7 +89,7 @@ class Read{
     foreach ($stmt->fetchALL(PDO::FETCH_ASSOC) as $key) {
       $tradTable[$key['id']] = $key['name'];
     }
-    foreach ($recp->getIngredients()[0] as $r) {
+    foreach ($recp->getIngredients() as $r) {
       $r->addQuantity($tradTable[$r->getQuantity()]);
       //var_dump($r);
     }
@@ -100,10 +101,12 @@ class Read{
     $arres = array();
     $sql = "SELECT * FROM comments WHERE receipt_id =" . $rId . " ORDER BY id;";
     $stmt = $handle->query($sql);
+    var_dump($stmt);
     foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $r) {
       $res = new myComment($r['pseudo'], $rId, $r['id'], $r['mark'], $r['comment']);
       array_push($arres, $res);
     }
+    var_dump($arres);
     return ($arres);
   }
 

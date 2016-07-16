@@ -47,15 +47,15 @@ class myRecette{
   }
 
   public function addIngredients($ingredient) {
-    array_push($this->ingredients, $ingredient);
+    $this->ingredients = $ingredient;
   }
 
   public function addSteps($step) {
-    array_push($this->steps, $step);
+    $this->steps = $step;
   }
 
   public function addComments($comment) {
-    array_push($this->comments, $comment);
+    $this->comments = $comment;
   }
 
   private function addSummary($summary) {
