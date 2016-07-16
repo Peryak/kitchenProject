@@ -103,12 +103,12 @@ class Read{
     $arres = array();
     $sql = "SELECT * FROM comments WHERE receipt_id =" . $rId . " ORDER BY id;";
     $stmt = $handle->query($sql);
-    var_dump($stmt);
+    //var_dump($stmt);
     foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $r) {
       $res = new myComment($r['pseudo'], $rId, $r['id'], $r['mark'], $r['comment']);
       array_push($arres, $res);
     }
-    var_dump($arres);
+    //var_dump($arres);
     return ($arres);
   }
 
@@ -122,8 +122,12 @@ class Read{
       $sqls = "SELECT * FROM receipts ORDER BY id;";
       $stmts = $handle->query($sqls);
       foreach ($stmts->fetchAll(PDO::FETCH_ASSOC) as $vars) {
-        $ress = new myRecette($vars['id'], $vars['email'], $vars['title'], $vars['cook_time'], $vars['prep_time'], $vars['summary']);
+        $ress = new myRecette($vars['id'], $vars['email'], $vars['name'], $vars['cook_time'], $vars['prep_time'], $vars['summary']);
         array_push($arr, $ress);
+        $ress->addIngredients($this->getIgredients($handle, $ress->getId()));
+        $this->getQuantity($handle, $ress);
+        $ress->addSteps($this->getSteps($handle, $ress->getId()));
+        $ress->addComments($this->getComments($handle, $ress->getId()));
       }
       return ($arr);
     }
@@ -135,6 +139,10 @@ class Read{
       foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $var) {
         $res = new myRecette($var);
         array_push($arres, $res);
+        $ress->addIngredients($this->getIgredients($handle, $ress->getId()));
+        $this->getQuantity($handle, $ress);
+        $ress->addSteps($this->getSteps($handle, $ress->getId()));
+        $ress->addComments($this->getComments($handle, $ress->getId()));
       }
       return ($arres);
     }

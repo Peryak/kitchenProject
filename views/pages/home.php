@@ -5,7 +5,8 @@ require_once "./handler/connection.php";
 $pdo = Database::connect();
 
 $var = new Read();
-$_SESSION['tab1'] = $var->getAllReceipt($pdo, TRUE, array(4));
+$recps = $var->getAllReceipt($pdo, TRUE, array(4));
+//var_dump($recps);
 //$tab2 = $var->getAllReceipt($pdo, FALSE, array(4));
 ?>
 
@@ -21,13 +22,15 @@ $_SESSION['tab1'] = $var->getAllReceipt($pdo, TRUE, array(4));
     <!-- /.col-lg-6 -->
 <?php
     $t = 0;
-    foreach ($_SESSION['tab1'] as $key) {
-    $t += 1;
+    foreach ($recps as $recp) {
+      //var_dump($recp);
+      $tab = $recp->get();
+      $t += 1;
         ?>
       <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading panelheading-clara_global">
-                <?php echo "<span>" . $key->getName() . "</span>"; ?>
+                <?php echo "<span>" . $tab['name'] . "</span>"; ?>
 
             </div>
             <div class="panel-body">
@@ -44,21 +47,16 @@ $_SESSION['tab1'] = $var->getAllReceipt($pdo, TRUE, array(4));
                 <div class="tab-content">
                     <div class="tab-pane fade in active" id="step_1<?php echo $t ?>">
                         <div class="col-md-12">
-                            <h5>Make a <em class="titlebodypanel-clara_global"><?php echo $key->getName(); ?></em> !</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h5>Make a <em class="titlebodypanel-clara_global"><?php echo $tab['name']; ?></em> !</h5>
+                            <p><?php echo $tab['summary']; ?></p>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="step_2<?php echo $t ?>">
-                        <h5>Ingredients</h5>
+                        <h5>Ingredients :</h5>
                         <?php
-                        /*foreach ($key->getIngredient() as $elements) {
-                            var_dump($elements);
-                            foreach ($elements as $ingredients) {
-                                echo $ingredients;
-                            }
-                        }*/
-                        //echo "<tr>" . $key->getIngredients() . "</tr>";
+                        foreach ($tab['ingredients'] as $keyIng) {
+                          $tabIng = $keyIng->get();
+                          echo ($tabIng['name'] . " " . $tabIng['value_ing'] . $tabIng['quantity'] . "<br/>");                        }
                         ?>
                     </div>
                 </div>
@@ -66,7 +64,7 @@ $_SESSION['tab1'] = $var->getAllReceipt($pdo, TRUE, array(4));
             </div>
             <div class="panel-footer panelfooter-clara_global">
                 <div class="col-md-9">
-                    <?php echo "<tr>" . $key->getMail() . "</tr>"; ?>
+                    <?php echo "<tr>" . $tab['mail'] . "</tr>"; ?>
                 </div>
                 <div class="col-md-3">
                     <button type="button" class="btn btn-default pull-right">Let's cook!</button>
