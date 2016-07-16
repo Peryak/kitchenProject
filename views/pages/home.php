@@ -56,7 +56,7 @@ $recps = $var->getAllReceipt($pdo, TRUE, array(4));
                         <?php
                         foreach ($tab['ingredients'] as $keyIng) {
                           $tabIng = $keyIng->get();
-                          echo ($tabIng['name'] . " " . $tabIng['value_ing'] . $tabIng['quantity'] . "<br/>");                        }
+                          echo ("<b>" . $tabIng['name'] . "</b> : " . $tabIng['value_ing'] . " (" . $tabIng['quantity']. ")" . "<br/>");                        }
                         ?>
                     </div>
                 </div>
