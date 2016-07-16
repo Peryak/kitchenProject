@@ -28,8 +28,9 @@ $recps = $var->getAllReceipt($pdo, TRUE, array(4));
       $tab = $recp->get();
       $t += 1;
         ?>
+        <!-- /.col-lg-6 -->
       <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-default panelbody-clara_global">
             <div class="panel-heading panelheading-clara_global">
                 <?php echo "<span>" . $tab['name'] . "</span>"; ?>
 
@@ -65,10 +66,10 @@ $recps = $var->getAllReceipt($pdo, TRUE, array(4));
             </div>
             <div class="panel-footer panelfooter-clara_global">
                 <div class="col-md-9">
-                    <?php echo "<tr>" . $tab['mail'] . "</tr>"; ?>
+                    <?php echo "<p><span class='fontAuthor'>by </span>". $tab['mail'] . "</p>"; ?>
                 </div>
                 <div class="col-md-3">
-                    <button type="button" class="btn btn-default pull-right">Let's cook!</button>
+                    <button type="button" class="btn btnsend-clara_global pull-right">Let's cook!</button>
                 </div>
                 <div class="clearfix"></div>
             </div>

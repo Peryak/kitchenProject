@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header titlebody-clara_global">Welcome <span class="welcomehomecolor">Home </span>!</h1>
+        <h1 class="page-header titlebody-clara_global">Posts</h1>
     </div>
     <!-- /.col-lg-12 -->
 </div>
@@ -102,7 +102,7 @@
             <!-- /.panel-body -->
             <div class="panel-footer panelfooter-clara_global">
                 <button type="reset" class="btn btnsend-clara_global pull-right">Confirm</button>
-                <button type="submit" class="btn btn-danger spacebetweenbuttons pull-right">Erase</button>
+                <button type="submit" class="btn btndelete-clara_global spacebetweenbuttons pull-right">Erase</button>
                 <div class="clearfix"></div>
             </div>
         </div>

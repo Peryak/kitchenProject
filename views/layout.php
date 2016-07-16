@@ -68,7 +68,7 @@ $pdo = Database::connect();
              role="navigation" style="margin-bottom: 0">
             <div class="nav collapse navbar-header navbar-collapse">
                 <a class="navbar-brand titleheader-clara_global" href="/kitchenProject/">kitchenProject</a>
-                <a class="navbar-brand navbarTitle" href='#'>Receipts</a>
+                <a class="navbar-brand navbarTitle" href='?controller=receipts&action=receipt'>Receipts</a>
                 <a class="navbar-brand navbarTitle" href='#'>Trends</a>
                 <a class="navbar-brand navbarTitle" href='#'>Burgers</a>
                 <a class="navbar-brand navbarTitle" href='?controller=posts&action=post'>Posts</a>
@@ -98,7 +98,7 @@ $pdo = Database::connect();
                             </div>
                         </div>
                     </form>-->
-                    <form method="post" class="navbar-form" role="search">
+                    <form class="navbar-form" role="search" method="post">
                       <div class="input-group testSearch">
                         <input
                           type="text"
@@ -111,12 +111,10 @@ $pdo = Database::connect();
                             type="submit"
                             value=""
                             class="btn btnsearch-clara_global">
-                            <imput>
-                              <i class="fa fa-search"></i>
-                            </imput>
                           </input>
                         </div>
                       </div>
+                        <i class="fa fa-search positionSearch"></i>
                     </form>
                 </li>
             </ul>
@@ -132,15 +130,9 @@ $pdo = Database::connect();
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="sidebartitle-clara_global">
+                            <a href="?controller=receipts&action=receipt" class="sidebartitle-clara_global">
                                 <i class="fa fa-spoon fa-lg spoonicon"></i>
                                 <span class="menu-text">Receipts</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sidebartitle-clara_global">
-                                <i class="fa fa-circle-thin fa-lg circleicon"></i>
-                                <span class="menu-text">Burgers</span>
                             </a>
                         </li>
                         <li>
@@ -150,7 +142,13 @@ $pdo = Database::connect();
                             </a>
                         </li>
                         <li>
-                            <a href="?controller=posts&action=index" class="sidebartitle-clara_global">
+                            <a href="#" class="sidebartitle-clara_global">
+                                <i class="fa fa-circle-thin fa-lg circleicon"></i>
+                                <span class="menu-text">Burgers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="?controller=posts&action=post" class="sidebartitle-clara_global">
                                 <i class="fa fa-newspaper-o fa-lg newspapericon"></i>
                                 <span class="menu-text">Posts</span>
                             </a>
