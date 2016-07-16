@@ -1,10 +1,13 @@
 <?php
 
 //require_once "./models/Sql.php";
-require_once "./sql/myRecette.php";
-require_once "./sql/myIngredient.php";
-require_once "./sql/mySteps.php";
-require_once "./sql/myComment.php";
+require_once "myRecette.php";
+require_once "myIngredient.php";
+require_once "mySteps.php";
+require_once "myComment.php";
+require_once "mySummary.php";
+
+
 
 class Read{
   public $tab;
