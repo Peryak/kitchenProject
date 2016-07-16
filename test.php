@@ -3,10 +3,10 @@ require_once "./models/Read.php";
 require_once "./handler/connection.php";
 $pdo = Database::connect();
 $var = new Read();
-$tab = $var->receiptAction($pdo, 'hugo');
-//var_dump($tab);
+$tab = $var->receiptAction($pdo, 'recette de test');
+var_dump($tab);
 //$arres = $var->tab[1];
-$recp = $tab[1]->get();
+$recp = $tab->get();
 var_dump($recp);
 $t = 0;
 foreach ($recp as $key) {
@@ -14,8 +14,9 @@ foreach ($recp as $key) {
     //$key = $key->get();
     foreach ($key as $r) {
       $key = $r->get();
+      //echo $key;
       foreach($key as $r){
-        echo ($r);
+        echo ($r. "<br/>");
       }
     }
   }

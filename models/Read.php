@@ -31,8 +31,10 @@ class Read{
     var_dump($recp->comments);
 */
     // return le tableau des éléments if TRUE 1 seule recette if FALSE plusieurs recettes
-
-    return (array($st, $recp));
+    if ($st == FALSE)
+      return ($st);
+    else
+    return ($recp);
 
   }
 
