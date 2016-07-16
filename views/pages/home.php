@@ -22,6 +22,7 @@ $recps = $var->getAllReceipt($pdo, TRUE, array(4));
     <!-- /.col-lg-6 -->
 <?php
     $t = 0;
+    //echo $_POST['toolbar_search'];
     foreach ($recps as $recp) {
       //var_dump($recp);
       $tab = $recp->get();
