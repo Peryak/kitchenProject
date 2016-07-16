@@ -16,13 +16,12 @@ function call($controller, $action) {
             $controller = new PagesController();
             break;
         case 'steps':
+            // we need the model to query the database later in the controller
             require_once('models/Steps.php');
             $controller = new StepsController();
             break;
         case 'posts':
-            // we need the model to query the database later in the controller
-            require_once('models/Posts.php');
-            $controller = new PostsController();
+            $controller = new PostController();
             break;
     }
 
@@ -31,7 +30,7 @@ function call($controller, $action) {
 
 // we're adding an entry for the new controller and its actions
 $controllers = array('pages' => ['home', 'error'],
-                    'posts' => ['index', 'show'],
+                    'posts' => ['post', 'error'],
                     'steps' => ['getst']);
 
 if (array_key_exists($controller, $controllers)) {

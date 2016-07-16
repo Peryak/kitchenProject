@@ -7,13 +7,15 @@
 // We usually name the view after the action name and we store it under the controller name.
 
 class PagesController {
-      public function home() {
-          $first_name = 'Pierre';
-          $last_name  = 'Laitselart';
-          require_once('views/pages/home.php');
-      }
 
-      public function error() {
-          require_once('views/pages/error.php');
-      }
-  }
+    public function home() {
+        $first_name = 'Pierre';
+        $last_name  = 'Laitselart';
+        require_once('views/pages/home.php');
+    }
+
+    public function error() {
+        require_once('views/pages/error.php');
+    }
+
+}
