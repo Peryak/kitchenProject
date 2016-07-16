@@ -119,20 +119,39 @@ class Read{
 
   public function getAllReceipt($handle, $bool, $array)
   {
+
     if ($bool == TRUE) {
-      // lire tout le tableau
-      $arr = array();
-      $sqls = "SELECT * FROM receipts ORDER BY id;";
-      $stmts = $handle->query($sqls);
-      foreach ($stmts->fetchAll(PDO::FETCH_ASSOC) as $vars) {
-        $ress = new myRecette($vars['id'], $vars['email'], $vars['name'], $vars['cook_time'], $vars['prep_time'], $vars['summary']);
-        array_push($arr, $ress);
-        $ress->addIngredients($this->getIgredients($handle, $ress->getId()));
-        $this->getQuantity($handle, $ress);
-        $ress->addSteps($this->getSteps($handle, $ress->getId()));
-        $ress->addComments($this->getComments($handle, $ress->getId()));
+      if(isset($_POST['toolbar_search'])){
+        // lire tout le tableau
+        $arr = array();
+        $sqls = 'SELECT * FROM receipts WHERE `name` LIKE "%'. $_POST['toolbar_search'] .'%" ORDER BY id;';
+        $stmts = $handle->query($sqls);
+        foreach ($stmts->fetchAll(PDO::FETCH_ASSOC) as $vars) {
+          $ress = new myRecette($vars['id'], $vars['email'], $vars['name'], $vars['cook_time'], $vars['prep_time'], $vars['summary']);
+          array_push($arr, $ress);
+          $ress->addIngredients($this->getIgredients($handle, $ress->getId()));
+          $this->getQuantity($handle, $ress);
+          $ress->addSteps($this->getSteps($handle, $ress->getId()));
+          $ress->addComments($this->getComments($handle, $ress->getId()));
+        }
+        return ($arr);
       }
-      return ($arr);
+      else {
+        // lire tout le tableau
+        $arr = array();
+        $sqls = "SELECT * FROM receipts ORDER BY id;";
+        $stmts = $handle->query($sqls);
+        foreach ($stmts->fetchAll(PDO::FETCH_ASSOC) as $vars) {
+          $ress = new myRecette($vars['id'], $vars['email'], $vars['name'], $vars['cook_time'], $vars['prep_time'], $vars['summary']);
+          array_push($arr, $ress);
+          $ress->addIngredients($this->getIgredients($handle, $ress->getId()));
+          $this->getQuantity($handle, $ress);
+          $ress->addSteps($this->getSteps($handle, $ress->getId()));
+          $ress->addComments($this->getComments($handle, $ress->getId()));
+        }
+        return ($arr);
+      }
+
     }
     else {
       // lire array[0] = au nombre d'éléments à afficher à partir de la fin
