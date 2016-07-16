@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff1ee266-2534-4157-85d4-ad126fc896d5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/receiptsController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/pages/receipts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handler/connection.php" afterPath="$PROJECT_DIR$/handler/connection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes.php" afterPath="$PROJECT_DIR$/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/assets/css/special.css" afterPath="$PROJECT_DIR$/views/assets/css/special.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.php" afterPath="$PROJECT_DIR$/views/layout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/home.php" afterPath="$PROJECT_DIR$/views/pages/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/posts.php" afterPath="$PROJECT_DIR$/views/pages/posts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/steps/display.php" afterPath="$PROJECT_DIR$/views/steps/display.php" />
-    </list>
+    <list default="true" id="ff1ee266-2534-4157-85d4-ad126fc896d5" name="Default" comment="" />
     <ignored path="kitchenProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -407,12 +396,12 @@
       <workItem from="1468505072497" duration="652000" />
       <workItem from="1468582589264" duration="56000" />
       <workItem from="1468668782359" duration="321000" />
-      <workItem from="1468669376637" duration="18698000" />
+      <workItem from="1468669376637" duration="18792000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168302000" />
+    <option name="totallyTimeSpent" value="168396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="23" width="1236" height="777" extended-state="0" />
