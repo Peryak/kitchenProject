@@ -5,7 +5,7 @@ require_once "myRecette.php";
 require_once "myIngredient.php";
 require_once "mySteps.php";
 require_once "myComment.php";
-require_once "mySummary.php";
+//require_once "mySummary.php";
 
 
 
