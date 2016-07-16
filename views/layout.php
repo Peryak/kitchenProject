@@ -71,7 +71,7 @@ $pdo = Database::connect();
                 <a class="navbar-brand navbarTitle" href='#'>Receipts</a>
                 <a class="navbar-brand navbarTitle" href='#'>Trends</a>
                 <a class="navbar-brand navbarTitle" href='#'>Burgers</a>
-                <a class="navbar-brand navbarTitle" href='?controller=posts&action=index'>Posts</a>
+                <a class="navbar-brand navbarTitle" href='?controller=posts&action=post'>Posts</a>
                 <a class="navbar-brand navbarTitle" href='?controller=steps&action=getst'>Steps</a>
             </div>
             <!-- /.navbar-header -->

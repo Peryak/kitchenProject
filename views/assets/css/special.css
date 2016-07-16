@@ -542,6 +542,10 @@ li > .list-clara_global:hover {
 	text-decoration: none !important;
 }
 
+.spacebetweenbuttons {
+	margin-right: 15px;
+}
+
 /* ------- Modals ------- */
 
 .modal-content {
