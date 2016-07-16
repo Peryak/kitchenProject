@@ -4,7 +4,7 @@ require_once "./handler/connection.php";
 $pdo = Database::connect();
 $var = new Read();
 $tab = $var->receiptAction($pdo, 'recette de test');
-var_dump($tab);
+//var_dump($tab);
 //$arres = $var->tab[1];
 $recp = $tab->get();
 var_dump($recp);
