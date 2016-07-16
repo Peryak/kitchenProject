@@ -1,3 +1,12 @@
+<?php
+require_once "./models/Read.php";
+require_once "./handler/connection.php";
+
+$pdo = Database::connect();
+$var = new Read();
+$_SESSION['tab1'] = $var->getAllReceipt($pdo, TRUE, array(4));
+?>
+
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header titlebody-clara_global">Steps</h1>
@@ -14,10 +23,10 @@
     <table class="table table-striped table-bordered">
         <thead>
         <tr>
-            <th>Order of the steps</th>
-            <th>Receipt number</th>
-            <th>Description</th>
-            <th>Action</th>
+            <th>Receipt</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -29,11 +38,11 @@
         //$sql = 'SELECT * FROM etapes ORDER BY id DESC';
         //$etape = new etapes();
         //$sql = $etape->getst();
-        foreach ($result as $row) {
+        foreach ($_SESSION['tab1'] as $key) {
             echo '<tr>';
-            echo '<td>'. $row['etape_order'] . '</td>';
-            echo '<td>'. $row['recette_id'] . '</td>';
-            echo '<td>'. $row['description'] . '</td>';
+            echo '<td>'. $key->getId() . '</td>';
+            echo '<td>'. $key->getName() . '</td>';
+            echo '<td>'. $key->getMail() . '</td>';
             echo '<td width=250>';
             echo '<a class="btn btn-default" href="/kitchenProject/views/steps/read.php?id='.$row['id'].'">Read</a>';
             echo ' ';
@@ -43,7 +52,6 @@
             echo '</td>';
             echo '</tr>';
         }
-        //Database::disconnect();
         ?>
         </tbody>
     </table>

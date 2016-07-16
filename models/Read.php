@@ -10,20 +10,20 @@ class Read{
   public $tab;
 
   public function receiptAction($handle, $name) {
-    $req = new Read();
+    //$req = new Read();
     // get l'id de la recette et l'email plus tard le commentaire
-    $recp = $req->getReceiptByName($handle, $name);
+    $recp = $this->getReceiptByName($handle, $name);
     // si une seul recette
     $st = TRUE;
     // si plusieur recette
 
     // recuperer les ingredients de cette recette
-    $recp->addIngredients($req->getIgredients($handle, $recp->getId()));
+    $recp->addIngredients($this->getIgredients($handle, $recp->getId()));
     //var_dump($recp->ingredients);
     $this->getQuantity($handle, $recp);
     //var_dump($recp->ingredients);
     // recuperer les etapes de cette recette
-    $recp->addSteps($req->getSteps($handle, $recp->getId()));
+    $recp->addSteps($this->getSteps($handle, $recp->getId()));
     //var_dump($recp->steps);
     //recuperer les commentaires
 /*
@@ -108,4 +108,30 @@ class Read{
   }
 
   //fonction photo
+
+  public function getAllReceipt($handle, $bool, $array)
+  {
+    if ($bool == TRUE) {
+      // lire tout le tableau
+      $arr = array();
+      $sqls = "SELECT * FROM receipts ORDER BY id;";
+      $stmts = $handle->query($sqls);
+      foreach ($stmts->fetchAll(PDO::FETCH_ASSOC) as $vars) {
+        $ress = new myRecette($vars['id'], $vars['email'], $vars['title'], $vars['cook_time'], $vars['prep_time'], $vars['summary']);
+        array_push($arr, $ress);
+      }
+      return ($arr);
+    }
+    else {
+      // lire array[0] = au nombre d'éléments à afficher à partir de la fin
+      $arres = array();
+      $sql = "SELECT * FROM receipts ORDER BY id DESC LIMIT " . $array[0] . ";";
+      $stmt = $handle->query($sql);
+      foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $var) {
+        $res = new myRecette($var);
+        array_push($arres, $res);
+      }
+      return ($arres);
+    }
+  }
 }
