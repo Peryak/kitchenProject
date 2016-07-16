@@ -58,15 +58,26 @@ class myComment{
     return ($this->id);
   }
 
-  public function getRId($rId) {
+  public function getRId() {
     return ($this->rId);
   }
 
-  public function getNote($note) {
+  public function getNote() {
     return ($this->note);
   }
 
-  public function getComment($comment) {
+  public function getComment() {
     return ($this->comment);
+  }
+
+  public function get() {
+    $tab = array(
+      'name' => $this->getPseudo(),
+      'id' => $this->getId(),
+      'rId' => $this->getRId(),
+      'note' => $this->getNote(),
+      'comment' => $this->getComment(),
+    );
+    return $tab;
   }
 }
