@@ -39,16 +39,17 @@ $_SESSION['tab1'] = $var->getAllReceipt($pdo, TRUE, array(4));
         //$etape = new etapes();
         //$sql = $etape->getst();
         foreach ($_SESSION['tab1'] as $key) {
+          $recp = $key->get();
             echo '<tr>';
-            echo '<td>'. $key->getId() . '</td>';
-            echo '<td>'. $key->getName() . '</td>';
-            echo '<td>'. $key->getMail() . '</td>';
+            echo '<td>'. $recp['id'] . '</td>';
+            echo '<td>'. $recp['name'] . '</td>';
+            echo '<td>'. $recp['mail'] . '</td>';
             echo '<td width=250>';
-            echo '<a class="btn btn-default" href="/kitchenProject/views/steps/read.php?id='.$row['id'].'">Read</a>';
+            echo '<a class="btn btn-default" href="/kitchenProject/views/steps/read.php?id=">Read</a>';
             echo ' ';
-            echo '<a class="btn btnsend-clara_global" href="/kitchenProject/views/steps/update.php?id='.$row['id'].'">Update</a>';
+            echo '<a class="btn btnsend-clara_global" href="/kitchenProject/views/steps/update.php?id=">Update</a>';
             echo ' ';
-            echo '<a class="btn btn-danger" href="/kitchenProject/views/steps/delete.php?id='.$row['id'].'">Delete</a>';
+            echo '<a class="btn btn-danger" href="/kitchenProject/views/steps/delete.php?id=">Delete</a>';
             echo '</td>';
             echo '</tr>';
         }
