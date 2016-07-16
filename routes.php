@@ -23,6 +23,9 @@ function call($controller, $action) {
         case 'posts':
             $controller = new PostController();
             break;
+        case 'receipts':
+            $controller = new ReceiptsController();
+            break;
     }
 
     $controller->{ $action }();
@@ -30,6 +33,7 @@ function call($controller, $action) {
 
 // we're adding an entry for the new controller and its actions
 $controllers = array('pages' => ['home', 'error'],
+                    'receipts' => ['receipt', 'error'],
                     'posts' => ['post', 'error'],
                     'steps' => ['getst']);
 
