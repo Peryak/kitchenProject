@@ -113,4 +113,30 @@ class Read{
   }
 
   //fonction photo
+
+  public function getAllReceipt($handle, $bool, $array)
+  {
+    if ($bool == TRUE) {
+      // lire tout le tableau
+      $arr = array();
+      $sqls = "SELECT * FROM receipts ORDER BY id;";
+      $stmts = $handle->query($sqls);
+      foreach ($stmts->fetchAll(PDO::FETCH_ASSOC) as $vars) {
+        $ress = new myRecette($vars['id'], $vars['email'], $vars['title'], $vars['cook_time'], $vars['prep_time'], $vars['summary']);
+        array_push($arr, $ress);
+      }
+      return ($arr);
+    }
+    else {
+      // lire array[0] = au nombre d'éléments à afficher à partir de la fin
+      $arres = array();
+      $sql = "SELECT * FROM receipts ORDER BY id DESC LIMIT " . $array[0] . ";";
+      $stmt = $handle->query($sql);
+      foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $var) {
+        $res = new myRecette($var);
+        array_push($arres, $res);
+      }
+      return ($arres);
+    }
+  }
 }
