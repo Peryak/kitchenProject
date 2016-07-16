@@ -9,7 +9,7 @@ class Steps
         $this->pdo = $pdo;
     }
     public function getlistAction() {
-        $sql = 'SELECT * FROM etapes ORDER BY id DESC';
+        $sql = 'SELECT * FROM receipt ORDER BY id DESC';
         $res = $this->pdo->query($sql);
         Database::disconnect();
         return $res;
