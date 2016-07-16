@@ -17,8 +17,8 @@ class myRecette{
   private $steps = array();
   private $comments = array();
 
-  public function __construct($id, $mail, $title, $cookTime, $prepTime, $summary) {
-    $this->addName($title);
+  public function __construct($id, $mail, $name, $cookTime, $prepTime, $summary) {
+    $this->addName($name);
     $this->addId($id);
     $this->addMail($mail);
     $this->addCT($cookTime);
