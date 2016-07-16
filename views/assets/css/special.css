@@ -57,6 +57,33 @@
 	color: #8bb5d2;
 }
 
+/* --------- Error --------- */
+
+.positionError {
+	margin-top: 23%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	position: relative;
+}
+
+.titleError {
+	font-size: 80px;
+}
+
+.paragraphError {
+	font-size: 40px;
+}
+
+img.imgError {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+	opacity: 0.8;
+}
+
 /* ------- Header ------- */
 
 /* Entire navbar */
